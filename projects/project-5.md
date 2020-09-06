@@ -1,9 +1,9 @@
 ---
 layout: project
 type: project
-image: images/u2klogo.jpg
+image: images/phoji400.jpg
 title: Phoji
-permalink: projects/u2k
+permalink: projects/phoji
 # All dates must be YYYY-MM-DD format!
 date: 2019-12-15
 labels:

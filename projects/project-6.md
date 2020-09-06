@@ -1,9 +1,9 @@
 ---
 layout: project
 type: project
-image: images/u2klogo.jpg
+image: images/nr200.png
 title: Native Rank
-permalink: projects/u2k
+permalink: projects/NativeRank
 # All dates must be YYYY-MM-DD format!
 date: 2019-12-15
 labels:
