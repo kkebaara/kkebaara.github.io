@@ -10,8 +10,7 @@ labels:
   - Ruby On Rails
   - IOS
   - Android
- 
-
-
 summary: Phoji is a patented cloud-based web app that enables you to create custom photo-based emojis that deliver rich media such as audio, video, coupons and polls. Phojis can be embedded in existing apps, push notifications, emails, and more.
+
+projecturl: http://phojiapp.com/
 ---
