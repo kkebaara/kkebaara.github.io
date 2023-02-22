@@ -1,179 +1,164 @@
 {
-  "basics": {
-    "name": "Kenneth Kebaara",
-    "label": "Software Developer & Entrepreneur",
-    "picture": "https://kkebaara.github.io/images/main.jpg",
-    "email": "kkebaara@yahoo.com",
-    "phone": "651-214-5188",
-    "website": "https://kkebaara.github.io",
-    "summary": "I have been developing software for 5 years. I enjoy working on software based on new business ideas. Contact me if you have an intersting idea.",
-    "location": {
-      "address": "",
-      "postalCode": "80205",
-      "city": "Denver",
-      "countryCode": "USA",
-      "region": "Colorado,"
-    },
-    "profiles": [
-      {
-        "network": "github",
-        "username": "kkebaara",
-        "url": "http://github.com/kkebaara"
-      },
-      {
-        "network": "linkedin",
-        "username": "kkebaara",
-        "url": "http://linkedin.com/in/kkebaara"
-      },
-      {
-        "network": "twitter",
-        "username": "kkebaara",
-        "url": "http://twitter.com/kkebaara"
-      },
-      {
-        "network": "instagram",
-        "username": "kkebaara",
-        "url": "http://instagram.com/Kebaara"
-      }
-    ]
-  },
-  "interests": [
-    {
-      "name": "Software Development",
-      "keywords": [
-      ]
-    },
-    {
-      "name": "SaaS",
-      "keywords": [
-      ]
-    },
-    {
-      "name": "Entrepreneurship",
-      "keywords": [
-      ]
-    }
-  ],
+	"basics": {
+		"name": "Kenneth Kebaara",
+		"label": "Software Developer & Entrepreneur",
+		"picture": "https://kkebaara.github.io/images/main.jpg",
+		"email": "kkebaara@yahoo.com",
+		"phone": "651-214-5188",
+		"website": "https://kkebaara.github.io",
+		"summary": "I have been developing software for 3 years. I enjoy working on software based on new business ideas. Contact me if you have an intersting idea.",
+		"location": {
+			"address": "",
+			"postalCode": "80205",
+			"city": "Denver",
+			"countryCode": "USA",
+			"region": "Colorado,"
+		},
+		"profiles": [
+			{
+				"network": "github",
+				"username": "kkebaara",
+				"url": "http://github.com/kkebaara"
+			},
+			{
+				"network": "linkedin",
+				"username": "kkebaara",
+				"url": "http://linkedin.com/in/kkebaara"
+			},
+			{
+				"network": "twitter",
+				"username": "kkebaara",
+				"url": "http://twitter.com/kkebaara"
+			},
+			{
+				"network": "instagram",
+				"username": "kkebaara",
+				"url": "http://instagram.com/Kebaara"
+			}
+		]
+	},
+	"interests": [
+		{
+			"name": "Software Development",
+			"keywords": []
+		},
+		{
+			"name": "SaaS",
+			"keywords": []
+		},
+		{
+			"name": "Entrepreneurship",
+			"keywords": []
+		}
+	],
 
-  "skills": [
-    {
-      "name": "Languages and Frameworks",
-      "level": "",
-      "keywords": [
-        "Ruby On Rails",
-        "HTML",
-        "CSS",
-        "Javascript"
-      ]
-    },
-    {
-      "name": "Toolsets/OS",
-      "level": "",
-      "keywords": [
-        "MacOS",
-        "Git (GitHub | BitBucket)"
-      ]
-    }
-  ],
+	"skills": [
+		{
+			"name": "Languages and Frameworks",
+			"level": "",
+			"keywords": ["Ruby On Rails", "HTML", "CSS", "Javascript"]
+		},
+		{
+			"name": "Toolsets/OS",
+			"level": "",
+			"keywords": ["MacOS", "Git (GitHub | BitBucket)"]
+		}
+	],
 
-  "education": [
-    {
-      "institution": "University of St Thomas, Minneapolis, MN",
-      "area": "Project Management ",
-      "studyType": "Certification",
-      "startDate": "2014",
-      "endDate": "",
-      "gpa": "",
-      "courses": [
-      ]
-    },
-    {
-      "institution": "Miami Ad School, South Beach, FL",
-      "area": "Brand Strategy",
-      "studyType": "Certification",
-      "startDate": "2012",
-      "endDate": "",
-      "gpa": "",
-      "courses": [
-      ]
-    },
+	"education": [
+		{
+			"institution": "University of St Thomas, Minneapolis, MN",
+			"area": "Project Management ",
+			"studyType": "Certification",
+			"startDate": "2014",
+			"endDate": "",
+			"gpa": "",
+			"courses": []
+		},
+		{
+			"institution": "Miami Ad School, South Beach, FL",
+			"area": "Brand Strategy",
+			"studyType": "Certification",
+			"startDate": "2012",
+			"endDate": "",
+			"gpa": "",
+			"courses": []
+		},
 
-    {
-      "institution": "University of St Thomas, Minneapolis, MN",
-      "area": "Business Entrepreneurship",
-      "studyType": "B.A.",
-      "startDate": "2005-09-01",
-      "endDate": "2010-12-15",
-      "gpa": "",
-      "courses": [
-      ]
-    },
-  ],
+		{
+			"institution": "University of St Thomas, Minneapolis, MN",
+			"area": "Business Entrepreneurship",
+			"studyType": "B.A.",
+			"startDate": "2005-09-01",
+			"endDate": "2010-12-15",
+			"gpa": "",
+			"courses": []
+		}
+	],
 
+	"work": [
+		{
+			"company": "Native Rank",
+			"position": "Front End Software Developer",
+			"website": "",
+			"startDate": "2020-01-01",
+			"endDate": "2020-03-01",
+			"summary": "",
+			"highlights": [
+				"Develop responsive websites that are cross browser and cross device compatible.",
+				"Manage and update websites on an ongoing basis including content, images and fixing bugs.",
+				"Implement SEO strategies and technical updates."
+			]
+		},
 
-  "work": [
-    {
-      "company": "Native Rank",
-      "position": "Front End Software Developer",
-      "website": "",
-      "startDate": "2020-01-01",
-      "endDate": "2020-03-01",
-      "summary": "",
-      "highlights": [
-        "Develop responsive websites that are cross browser and cross device compatible.",
-        "Manage and update websites on an ongoing basis including content, images and fixing bugs.",
-        "Implement SEO strategies and technical updates."
-      ]
-    },
+		{
+			"company": "USA2Kenya, LLC",
+			"position": "Software Developer",
+			"website": "",
+			"startDate": "2015-01-01",
+			"endDate": "2019-03-15",
+			"summary": "",
+			"highlights": [
+				"Developed a Web Application, that gave users a US mailing address to shop US discounts online and receive their purchases internationally.",
+				"Gathered and documented business requirements for application development.",
+				"Make sure the project ran smoothly and was completed."
+			]
+		},
 
-    {
-      "company": "USA2Kenya, LLC",
-      "position": "Software Developer",
-      "website": "",
-      "startDate": "2015-01-01",
-      "endDate": "2019-03-15",
-      "summary": "",
-      "highlights": [
-        "Developed a Web Application, that gave users a US mailing address to shop US discounts online and receive their purchases internationally.",
-        "Gathered and documented business requirements for application development.",
-        "Make sure the project ran smoothly and was completed."
-      ]
-    },
+		{
+			"company": "Phoji, LLC",
+			"position": "Software Developer",
+			"website": "",
+			"startDate": "2015-08-01",
+			"endDate": "2016-08-01",
+			"summary": "",
+			"highlights": [
+				"Worked on application that created real photo emojis (Phoji's)",
+				"Maintain the AWS database and make sure the models and the data were not corrupted",
+				"Share and develop new ideas on how to improve the application.",
+				"Maintain the website for the company as a marketing tool making it user friendly."
+			]
+		},
 
-    {
-      "company": "Phoji, LLC",
-      "position": "Software Developer",
-      "website": "",
-      "startDate": "2015-08-01",
-      "endDate": "2016-08-01",
-      "summary": "",
-      "highlights": [
-        "Worked on application that created real photo emojis (Phoji's)",
-        "Maintain the AWS database and make sure the models and the data were not corrupted",
-        "Share and develop new ideas on how to improve the application.",
-        "Maintain the website for the company as a marketing tool making it user friendly."
-      ]
-    },
+		{
+			"company": "United Health Group",
+			"position": "Software Developer",
+			"website": "",
+			"startDate": "2015-01-01",
+			"endDate": "2016-03-15",
+			"summary": "",
+			"highlights": [
+				"Worked with a team to come up with health care based software solutions.",
+				"Work in an agile enviroment to build features as requested.",
+				"Built and application that CRM application that sent information to users via text and stored user information."
+			]
+		}
+	],
 
-      {
-      "company": "United Health Group",
-      "position": "Software Developer",
-      "website": "",
-      "startDate": "2015-01-01",
-      "endDate": "2016-03-15",
-      "summary": "",
-      "highlights": [
-        "Worked with a team to come up with health care based software solutions.",
-        "Work in an agile enviroment to build features as requested.",
-        "Built and application that CRM application that sent information to users via text and stored user information."
-      ]
-    }
-  ],
-
-  "references": [
-    {
-      "name": "Available upon request",
-      "reference": ""
-    }
-  ]
+	"references": [
+		{
+			"name": "Available upon request",
+			"reference": ""
+		}
+	]
 }
