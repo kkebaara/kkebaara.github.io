@@ -67,6 +67,15 @@
 
 	"education": [
 		{
+			"institution": "Flatiron School, New York, NY",
+			"area": "Software Engineering",
+			"studyType": "Certification",
+			"startDate": "2022",
+			"endDate": "",
+			"gpa": "",
+			"courses": []
+		},
+		{
 			"institution": "University of St Thomas, Minneapolis, MN",
 			"area": "Project Management ",
 			"studyType": "Certification",
