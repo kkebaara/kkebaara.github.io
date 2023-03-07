@@ -3,7 +3,7 @@ layout: project
 type: project
 image: images/fbj.png
 title: Native Rank
-permalink: projects/NativeRank
+permalink: projects/FitByJonetics
 # All dates must be YYYY-MM-DD format!
 date: 2019-12-15
 labels:
