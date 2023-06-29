@@ -5,7 +5,7 @@ image: images/fbj.png
 title: Fit By Jonetics
 permalink: projects/FitByJonetics
 # All dates must be YYYY-MM-DD format!
-date: 2019-12-15
+date: 2023-04-01
 labels:
   - Commerce
   - Scheduling
@@ -15,5 +15,4 @@ labels:
 summary: Personal trainer app
 
 projecturl: https://www.fitbyjonetics.com/
-
 ---
