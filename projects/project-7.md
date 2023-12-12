@@ -12,7 +12,7 @@ labels:
   - Business
   - Shipping
 
-summary: Personal trainer app
+summary: Personal Trainer Website
 
 projecturl: https://www.fitbyjonetics.com/
 ---
