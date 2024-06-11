@@ -7,6 +7,9 @@ permalink: projects/WellVue
 # All dates must be YYYY-MM-DD format!
 date: 2023-10-01
 labels:
+  - React
+  - React Native 
+  - Firebase
   - Commerce
   - Scheduling
   - Business
