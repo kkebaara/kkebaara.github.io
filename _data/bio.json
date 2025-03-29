@@ -69,11 +69,11 @@
 		{
 			"institution": "Google For Startups: Gen AI School",
 			"area": "GEN AI Software Engineer Student",
-			"studyType": "Certification",
+			"studyType": "Google Certifications",
 			"startDate": "2025",
 			"endDate": "",
 			"gpa": "",
-			"courses": ["GEN AI", "Google Cloud" ]
+			"courses": ["Generative AI", "Google Cloud Certifications" ]
 		},
 		{
 			"institution": "Flatiron School, New York, NY",
