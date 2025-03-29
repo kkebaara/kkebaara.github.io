@@ -136,19 +136,6 @@
 			]
 		},
 		{
-			"company": "Native Rank",
-			"position": "Front End Software Developer",
-			"website": "",
-			"startDate": "2020-01-01",
-			"endDate": "2020-03-01",
-			"summary": "",
-			"highlights": [
-				"Develop responsive websites that are cross browser and cross device compatible.",
-				"Manage and update websites on an ongoing basis including content, images and fixing bugs.",
-				"Implement SEO strategies and technical updates."
-			]
-		},
-		{
 			"company": "GBCS Group | SkyIT",
 			"position": "Front End Software Developer",
 			"website": "",
@@ -177,6 +164,20 @@
 				"Built beautiful user interfaces for clients, striking a balance between functional and aesthetic design.",
 				"Built apps utilizing best practices and modular code, improving maintainability and facilitating future feature development.",
 				"Built and maintained data visualization tools and APIs for internal stakeholders."
+			]
+		},
+
+		{
+			"company": "Native Rank",
+			"position": "Front End Software Developer",
+			"website": "",
+			"startDate": "2020-01-01",
+			"endDate": "2020-03-01",
+			"summary": "",
+			"highlights": [
+				"Develop responsive websites that are cross browser and cross device compatible.",
+				"Manage and update websites on an ongoing basis including content, images and fixing bugs.",
+				"Implement SEO strategies and technical updates."
 			]
 		},
 
