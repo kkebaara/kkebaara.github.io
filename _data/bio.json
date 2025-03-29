@@ -107,16 +107,32 @@
 
 	"work": [
 		{
-			"company": "Native Rank",
-			"position": "Front End Software Developer",
+			"company": "Google For Startups: Gen AI School",
+			"position": "Student",
 			"website": "",
-			"startDate": "2020-01-01",
-			"endDate": "2020-03-01",
+			"startDate": "2025-01-02",
+			"endDate": "2025-03-03",
 			"summary": "",
 			"highlights": [
-				"Develop responsive websites that are cross browser and cross device compatible.",
-				"Manage and update websites on an ongoing basis including content, images and fixing bugs.",
-				"Implement SEO strategies and technical updates."
+				"Participated in an immersive AI training program focused on Large Language Models (LLMs) and Google Cloud AI solutions.",
+				"Engaged in hands-on projects to understand AI infrastructure and its impact on startup development.",
+				"Collaborated with industry experts and Google mentors to refine AI solutions for real-world applications.",
+				"Gained insights into ethical AI practices and the future of generative AI in business."
+			]
+		},
+		{
+			"company": "WellVue",
+			"position": "React Native Engineer",
+			"website": "",
+			"startDate": "2023-01-01",
+			"endDate": "2024-03-01",
+			"summary": "",
+			"highlights": [
+				"Tailored data-driven solutions for multifamily or multi-use asset managers, prioritizing resident engagement and retention.",
+				"Collaborated with graphic designers, resulting in a 30% reduction in design iterations and improved UI/UX.",
+				"Planned and developed the MVP, back-end, and front-end of the application, delivering features ahead of schedule.",
+				"Built apps utilizing best practices and modular code, improving maintainability and facilitating future feature development.",
+				"Successfully deployed applications, ensuring 99.9% uptime and minimal bugs reported by end-users."
 			]
 		},
 		{
@@ -133,29 +149,34 @@
 			]
 		},
 		{
-			"company": "Native Rank",
+			"company": "GBCS Group | SkyIT",
 			"position": "Front End Software Developer",
 			"website": "",
-			"startDate": "2020-01-01",
-			"endDate": "2020-03-01",
+			"startDate": "2023-01-01",
+			"endDate": "2023-03-01",
 			"summary": "",
 			"highlights": [
-				"Develop responsive websites that are cross browser and cross device compatible.",
-				"Manage and update websites on an ongoing basis including content, images and fixing bugs.",
-				"Implement SEO strategies and technical updates."
+				"Created industry-leading digital solutions in fleet management through cutting-edge technologies.",
+				"Collaborated with graphic designers, resulting in a 30% reduction in design iterations and improved UI/UX.",
+				"Built apps utilizing best practices and modular code, improving maintainability and facilitating future feature development.",
+				"Refactored legacy code to current industry standards, resulting in a 20% improvement in runtimes.",
+				"Updated and improved error logging, helping reduce bugs."
 			]
 		},
+
 		{
-			"company": "Native Rank",
-			"position": "Front End Software Developer",
+			"company": "Mononym Digital",
+			"position": "Full Stack Software Engineer",
 			"website": "",
-			"startDate": "2020-01-01",
-			"endDate": "2020-03-01",
+			"startDate": "2022-08-01",
+			"endDate": "2016-08-01",
 			"summary": "",
 			"highlights": [
-				"Develop responsive websites that are cross browser and cross device compatible.",
-				"Manage and update websites on an ongoing basis including content, images and fixing bugs.",
-				"Implement SEO strategies and technical updates."
+				"Developed responsive apps that achieved a 20% increase in user engagement and a 15% improvement in page load time.",
+				"Collaborated with graphic designers, resulting in a 30% reduction in design iterations and improved UI/UX.",
+				"Built beautiful user interfaces for clients, striking a balance between functional and aesthetic design.",
+				"Built apps utilizing best practices and modular code, improving maintainability and facilitating future feature development.",
+				"Built and maintained data visualization tools and APIs for internal stakeholders."
 			]
 		},
 
