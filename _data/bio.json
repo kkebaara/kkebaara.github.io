@@ -67,6 +67,15 @@
 
 	"education": [
 		{
+			"institution": "Google For Startups: Gen AI School",
+			"area": "GEN AI Software Engineer Student",
+			"studyType": "Certification",
+			"startDate": "2025",
+			"endDate": "",
+			"gpa": "",
+			"courses": ["GEN AI", "Google Cloud" ]
+		},
+		{
 			"institution": "Flatiron School, New York, NY",
 			"area": "Software Engineering",
 			"studyType": "Certification",
@@ -155,8 +164,8 @@
 			"company": "Mononym Digital",
 			"position": "Full Stack Software Engineer",
 			"website": "",
-			"startDate": "2022-08-01",
-			"endDate": "2016-08-01",
+			"startDate": "2016-08-01",
+			"endDate": "2022-08-01",
 			"summary": "",
 			"highlights": [
 				"Developed responsive apps that achieved a 20% increase in user engagement and a 15% improvement in page load time.",
