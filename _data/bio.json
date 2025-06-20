@@ -67,6 +67,15 @@
 
 	"education": [
 		{
+			"institution": "Google: Cloud Data Analytics Certification",
+			"area": "Cloud Data Analytics Certification",
+			"studyType": "Google Certifications",
+			"startDate": "2025",
+			"endDate": "",
+			"gpa": "",
+			"courses": ["Data Analytics", "Google Cloud Certifications" ]
+		},
+		{
 			"institution": "Google For Startups: Gen AI School",
 			"area": "GEN AI Software Engineer Student",
 			"studyType": "Google Certifications",
