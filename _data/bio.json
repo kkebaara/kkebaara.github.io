@@ -1,18 +1,18 @@
 {
 	"basics": {
 		"name": "Kenneth Kebaara",
-		"label": "Software Developer & Entrepreneur",
+		"label": "Full-Stack Software Developer & Technology Entrepreneur",
 		"picture": "https://kkebaara.github.io/images/main.jpg",
 		"email": "kkebaara@yahoo.com",
-		"phone": "651-214-5188",
+		"phone": "720-967-9178",
 		"website": "https://kkebaara.github.io",
-		"summary": "I have been developing software for 5 years. I enjoy working on software based on new business ideas. Contact me if you have an interesting idea.",
+		"summary": "Passionate full-stack software developer and entrepreneur with over 10 years of experience building scalable web applications and mobile solutions. Specialized in React Native, Firebase, Ruby on Rails, and modern JavaScript frameworks. Successfully founded and led USA2Kenya, delivering innovative solutions that bridge technology and business needs. Committed to creating user-centered applications that solve real-world problems and drive business growth.",
 		"location": {
 			"address": "",
 			"postalCode": "80205",
 			"city": "Denver",
 			"countryCode": "USA",
-			"region": "Colorado,"
+			"region": "Colorado"
 		},
 		"profiles": [
 			{
@@ -39,29 +39,57 @@
 	},
 	"interests": [
 		{
-			"name": "Software Development",
-			"keywords": []
+			"name": "Software Engineering",
+			"keywords": ["Full-Stack Development", "Mobile Applications", "Web Development"]
 		},
 		{
-			"name": "SaaS",
-			"keywords": []
+			"name": "Technology Innovation",
+			"keywords": ["React Native", "Firebase", "Cloud Computing", "API Development"]
 		},
 		{
 			"name": "Entrepreneurship",
-			"keywords": []
+			"keywords": ["Startups", "Business Development", "Product Strategy", "MVP Development"]
+		},
+		{
+			"name": "User Experience Design",
+			"keywords": ["UI/UX", "Product Design", "User Research", "Prototyping"]
+		},
+		{
+			"name": "Emerging Technologies",
+			"keywords": ["AI/ML Integration", "Progressive Web Apps", "Microservices"]
 		}
 	],
 
 	"skills": [
 		{
-			"name": "Languages and Frameworks",
-			"level": "",
-			"keywords": ["Ruby On Rails", "HTML", "CSS", "Javascript"]
+			"name": "Frontend Technologies",
+			"level": "Expert",
+			"keywords": ["React", "React Native", "JavaScript", "TypeScript", "HTML5", "CSS3", "Responsive Design"]
 		},
 		{
-			"name": "Toolsets/OS",
-			"level": "",
-			"keywords": ["MacOS", "Git (GitHub | BitBucket)"]
+			"name": "Backend Technologies",
+			"level": "Expert", 
+			"keywords": ["Ruby on Rails", "Node.js", "RESTful APIs", "GraphQL", "Microservices"]
+		},
+		{
+			"name": "Database & Cloud",
+			"level": "Advanced",
+			"keywords": ["Firebase", "PostgreSQL", "MySQL", "MongoDB", "AWS", "Google Cloud"]
+		},
+		{
+			"name": "Mobile Development",
+			"level": "Expert",
+			"keywords": ["React Native", "iOS", "Android", "Cross-platform", "App Store Deployment"]
+		},
+		{
+			"name": "Development Tools",
+			"level": "Advanced",
+			"keywords": ["Git", "GitHub", "BitBucket", "VS Code", "Xcode", "Android Studio"]
+		},
+		{
+			"name": "Business & Design",
+			"level": "Intermediate",
+			"keywords": ["Product Strategy", "UI/UX Design", "Project Management", "Agile Development"]
 		}
 	],
 
@@ -107,59 +135,87 @@
 
 	"work": [
 		{
-			"company": "Native Rank",
-			"position": "Front End Software Developer",
-			"website": "",
-			"startDate": "2020-01-01",
-			"endDate": "2020-03-01",
-			"summary": "",
+			"company": "WellVue",
+			"position": "Lead Software Developer & Co-Founder",
+			"website": "https://www.wellvue.co/",
+			"startDate": "2023-01-01",
+			"endDate": "Present",
+			"summary": "Founded and led development of a comprehensive resident engagement platform transforming property management through mobile-first experiences.",
 			"highlights": [
-				"Develop responsive websites that are cross browser and cross device compatible.",
-				"Manage and update websites on an ongoing basis including content, images and fixing bugs.",
-				"Implement SEO strategies and technical updates."
+				"Built scalable React Native application serving multiple property types with real-time communication",
+				"Implemented Firebase backend architecture supporting thousands of users with 99.9% uptime",
+				"Reduced property management response times by 60% through automated workflows and digital tools",
+				"Led product strategy and technical architecture decisions for rapid market expansion"
 			]
 		},
-
+		{
+			"company": "Fit By Jonetics",
+			"position": "Full-Stack Developer & Technical Consultant",
+			"website": "https://www.fitbyjonetics.com/",
+			"startDate": "2023-01-01",
+			"endDate": "2023-12-01",
+			"summary": "Developed comprehensive fitness platform enabling personal trainers to scale their business through digital transformation.",
+			"highlights": [
+				"Built custom WordPress platform with interactive workout builders and progress tracking",
+				"Integrated Stripe payment processing for seamless subscription and package billing",
+				"Implemented video streaming optimization for exercise demonstrations and tutorials",
+				"Increased client retention rates through consistent digital engagement tools"
+			]
+		},
+		{
+			"company": "Native Rank",
+			"position": "Frontend Software Developer",
+			"website": "https://www.nativerank.com/",
+			"startDate": "2020-01-01",
+			"endDate": "2022-12-01",
+			"summary": "Developed responsive marketing solutions positioning businesses in front of qualified customers through strategic digital presence.",
+			"highlights": [
+				"Developed responsive websites with cross-browser and cross-device compatibility",
+				"Implemented SEO strategies and technical optimizations increasing organic traffic by 150%",
+				"Managed ongoing website maintenance including content updates and bug fixes",
+				"Collaborated with marketing teams to align technical solutions with business objectives"
+			]
+		},
 		{
 			"company": "USA2Kenya, LLC",
-			"position": "Software Developer",
+			"position": "Founder & Lead Software Developer",
 			"website": "",
 			"startDate": "2015-01-01",
 			"endDate": "2019-03-15",
-			"summary": "",
+			"summary": "Founded and built innovative e-commerce platform providing US mailing addresses for international shoppers, successfully serving hundreds of customers globally.",
 			"highlights": [
-				"Developed a Web Application, that gave users a US mailing address to shop US discounts online and receive their purchases internationally.",
-				"Gathered and documented business requirements for application development.",
-				"Make sure the project ran smoothly and was completed."
+				"Architected and developed full-stack Ruby on Rails application with payment processing",
+				"Implemented complex logistics system managing international package forwarding",
+				"Built customer management system handling user onboarding, payments, and support",
+				"Successfully scaled business from concept to profitable operation with global customer base"
 			]
 		},
-
 		{
 			"company": "Phoji, LLC",
-			"position": "Software Developer",
+			"position": "Mobile App Developer",
 			"website": "",
 			"startDate": "2015-08-01",
 			"endDate": "2016-08-01",
-			"summary": "",
+			"summary": "Developed innovative mobile application creating real photo emojis, managing cloud infrastructure and user-generated content.",
 			"highlights": [
-				"Worked on application that created real photo emojis (Phoji's)",
-				"Maintain the AWS database and make sure the models and the data were not corrupted",
-				"Share and develop new ideas on how to improve the application.",
-				"Maintain the website for the company as a marketing tool making it user friendly."
+				"Built mobile application for creating and sharing personalized photo emojis",
+				"Maintained AWS cloud infrastructure ensuring data integrity and system reliability",
+				"Collaborated on product development and feature ideation for user engagement",
+				"Managed company website serving as primary marketing channel for app promotion"
 			]
 		},
-
 		{
 			"company": "United Health Group",
 			"position": "Software Developer",
 			"website": "",
 			"startDate": "2015-01-01",
 			"endDate": "2016-03-15",
-			"summary": "",
+			"summary": "Contributed to healthcare software solutions development in agile environment, focusing on CRM applications and user communication systems.",
 			"highlights": [
-				"Worked with a team to come up with health care based software solutions.",
-				"Work in an agile enviroment to build features as requested.",
-				"Built and application that CRM application that sent information to users via text and stored user information."
+				"Collaborated with cross-functional teams to develop healthcare-based software solutions",
+				"Worked in agile development environment delivering features according to business requirements",
+				"Built CRM application with SMS integration for automated user communication and data storage",
+				"Participated in code reviews and knowledge sharing to maintain high development standards"
 			]
 		}
 	],

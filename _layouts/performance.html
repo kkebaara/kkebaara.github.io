@@ -1,0 +1,31 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include head.html %}
+  
+  <!-- Performance optimizations -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  
+  <!-- Critical CSS inlined -->
+  <style>
+    /* Critical above-the-fold styles */
+    body { font-family: 'Open Sans', sans-serif; margin: 0; }
+    .ui.inverted.menu { background: #1b1c1d !important; }
+    .main-container { min-height: 100vh; }
+  </style>
+</head>
+<body>
+  <div class="main-container">
+    {{ content }}
+  </div>
+  {% include footer.html %}
+  
+  <!-- Load non-critical CSS asynchronously -->
+  <link rel="preload" href="{{ site.baseurl }}/css/semantic-ui/semantic.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="{{ site.baseurl }}/css/semantic-ui/semantic.min.css"></noscript>
+</body>
+</html>

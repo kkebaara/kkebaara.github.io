@@ -8,6 +8,11 @@ url: "https://kkebaara.github.io"
 # Edit next line so that baseurl is "" if your repo is <username>.github.io
 baseurl: ""
 
+# SEO settings
+description: "Software Developer & Entrepreneur with 5+ years of experience in web development, SaaS solutions, and building innovative business ideas."
+author: Kenneth Kebaara
+keywords: "Kenneth Kebaara, Software Developer, Entrepreneur, SaaS, Web Development, Portfolio"
+
 # OPTIONAL CHANGES
 # You might want to change the bio page label to something else, such as CV
 bio-page-label: Resume
@@ -20,6 +25,20 @@ theme-bio: theme-bio-builtin-3.html
 
 # Specify the rouge syntax highlighter theme. Pick one from css/rouge.
 rouge-theme: igorpro
+
+# Collections for better organization
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:name/
+  essays:
+    output: true
+    permalink: /:collection/:name/
+
+# Plugins
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
 # YOU NORMALLY NEVER CHANGE THE FOLLOWING
 markdown: kramdown

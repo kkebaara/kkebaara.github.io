@@ -11,14 +11,85 @@
     {{ site.title }}
   </title>
 
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% elsif page.summary %}{{ page.summary }}{% else %}{{ site.data.bio.basics.summary }}{% endif %}">
+  <meta name="keywords" content="{% if page.labels %}{{ page.labels | join: ', ' }}{% endif %}Kenneth Kebaara, Software Developer, Entrepreneur, SaaS, Web Development">
+  <meta name="author" content="{{ site.data.bio.basics.name }}">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% elsif page.summary %}{{ page.summary }}{% else %}{{ site.data.bio.basics.summary }}{% endif %}">
+  <meta property="og:image" content="{{ site.data.bio.basics.picture }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:type" content="{% if page.layout == 'essay' %}article{% else %}website{% endif %}">
+  <meta property="og:site_name" content="{{ site.title }}">
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@kkebaara">
+  <meta name="twitter:creator" content="@kkebaara">
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% elsif page.summary %}{{ page.summary }}{% else %}{{ site.data.bio.basics.summary }}{% endif %}">
+  <meta name="twitter:image" content="{{ site.data.bio.basics.picture }}">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/favicon.ico">
+
   <!-- Load Javascript and CSS for Semantic UI -->
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="{{ site.baseurl }}/css/semantic-ui/semantic.min.js"></script>
   <link rel="stylesheet" href="{{ site.baseurl }}/css/semantic-ui/semantic.min.css">
+  
+  <!-- Site enhancements -->
+  <script src="{{ site.baseurl }}/js/site-enhancements.js"></script>
 
   <!-- Load Techfolio CSS customizations -->
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl}}/css/stylesheet-default.css">
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl}}/css/stylesheet-customizations.css">
+
+  <!-- Dark mode styles -->
+  <style>
+    [data-theme="dark"] {
+      --bg-color: #1a1a1a;
+      --text-color: #e0e0e0;
+      --card-bg: #2d2d2d;
+      --border-color: #404040;
+    }
+    
+    [data-theme="dark"] body {
+      background-color: var(--bg-color) !important;
+      color: var(--text-color) !important;
+    }
+    
+    [data-theme="dark"] .ui.card {
+      background: var(--card-bg) !important;
+      border: 1px solid var(--border-color) !important;
+    }
+    
+    .theme-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 1000;
+      background: rgba(0,0,0,0.1);
+      border: none;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+    }
+    
+    .theme-toggle:hover {
+      background: rgba(0,0,0,0.2);
+    }
+  </style>
 
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl}}/css/print-default.css" media="print">
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl}}/css/print-customizations.css" media="print">
@@ -34,15 +105,73 @@
           src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   {% endif %}
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-167528522-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YOUR-GA4-ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-YOUR-GA4-ID');
+  </script>
 
-  gtag('config', 'UA-167528522-1');
+<!-- Structured Data JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "{{ site.data.bio.basics.name }}",
+  "jobTitle": "{{ site.data.bio.basics.label }}",
+  "description": "{{ site.data.bio.basics.summary }}",
+  "url": "{{ site.url }}",
+  "email": "{{ site.data.bio.basics.email }}",
+  "telephone": "{{ site.data.bio.basics.phone }}",
+  "image": "{{ site.data.bio.basics.picture }}",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "{{ site.data.bio.basics.location.city }}",
+    "addressRegion": "{{ site.data.bio.basics.location.region }}",
+    "postalCode": "{{ site.data.bio.basics.location.postalCode }}",
+    "addressCountry": "{{ site.data.bio.basics.location.countryCode }}"
+  },
+  "sameAs": [
+    {% for profile in site.data.bio.basics.profiles %}
+    "{{ profile.url }}"{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ],
+  "knowsAbout": [
+    "JavaScript", "React", "Node.js", "Python", "Ruby on Rails", 
+    "Mobile Development", "Web Development", "Software Architecture",
+    "Entrepreneurship", "SaaS Development"
+  ],
+  "hasOccupation": {
+    "@type": "Occupation",
+    "name": "Software Developer",
+    "occupationLocation": {
+      "@type": "City",
+      "name": "{{ site.data.bio.basics.location.city }}"
+    }
+  }
+}
 </script>
+
+{% if page.type == "project" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": "{{ page.title }}",
+  "description": "{{ page.summary }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ site.data.bio.basics.name }}"
+  },
+  "dateCreated": "{{ page.date }}",
+  "url": "{{ site.url }}{{ page.url }}",
+  "image": "{{ site.url }}/{{ page.image }}",
+  "keywords": "{{ page.labels | join: ', ' }}"
+}
+</script>
+{% endif %}
 
 
 
