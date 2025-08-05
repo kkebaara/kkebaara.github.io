@@ -1,0 +1,108 @@
+<!-- Medium Articles Integration -->
+<div class="ui container">
+  <h2 class="ui dividing header">
+    <i class="medium icon"></i>
+    Latest from Medium
+  </h2>
+  
+  <div id="medium-articles" class="ui three stackable cards">
+    <div class="ui active centered inline loader"></div>
+  </div>
+</div>
+
+<script>
+// Fetch Medium articles via RSS
+async function fetchMediumArticles() {
+  try {
+    // Replace 'yourusername' with your actual Medium username
+    const mediumUsername = 'kkebaara'; // Update this with your Medium username
+    const rssUrl = `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@${mediumUsername}`;
+    
+    const response = await fetch(rssUrl);
+    const data = await response.json();
+    
+    if (data.status === 'ok') {
+      displayMediumArticles(data.items.slice(0, 6)); // Show latest 6 articles
+    } else {
+      document.getElementById('medium-articles').innerHTML = 
+        '<div class="ui message">Unable to load Medium articles at this time.</div>';
+    }
+  } catch (error) {
+    console.error('Error fetching Medium articles:', error);
+    document.getElementById('medium-articles').innerHTML = 
+      '<div class="ui warning message">Medium articles temporarily unavailable.</div>';
+  }
+}
+
+function displayMediumArticles(articles) {
+  const container = document.getElementById('medium-articles');
+  
+  if (articles.length === 0) {
+    container.innerHTML = '<div class="ui message">No Medium articles found.</div>';
+    return;
+  }
+  
+  const articlesHtml = articles.map(article => {
+    const publishDate = new Date(article.pubDate).toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+    });
+    
+    // Extract first image from content if available
+    const imgMatch = article.content.match(/<img[^>]+src="([^">]+)"/);
+    const imageUrl = imgMatch ? imgMatch[1] : '/images/default-article.jpg';
+    
+    // Clean description
+    const description = article.description.replace(/<[^>]*>/g, '').substring(0, 150) + '...';
+    
+    return `
+      <div class="card">
+        <div class="image">
+          <img src="${imageUrl}" alt="${article.title}" onerror="this.src='/images/default-article.jpg'">
+        </div>
+        <div class="content">
+          <div class="header">${article.title}</div>
+          <div class="meta">
+            <span class="date">${publishDate}</span>
+            <span class="right floated">
+              <i class="medium icon"></i>
+              Medium
+            </span>
+          </div>
+          <div class="description">
+            ${description}
+          </div>
+        </div>
+        <div class="extra content">
+          <a href="${article.link}" target="_blank" class="ui primary button">
+            <i class="external alternate icon"></i>
+            Read on Medium
+          </a>
+        </div>
+      </div>
+    `;
+  }).join('');
+  
+  container.innerHTML = articlesHtml;
+}
+
+// Load articles when page loads
+document.addEventListener('DOMContentLoaded', fetchMediumArticles);
+</script>
+
+<style>
+#medium-articles .card .image img {
+  height: 200px;
+  object-fit: cover;
+}
+
+#medium-articles .card {
+  transition: transform 0.3s ease;
+}
+
+#medium-articles .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+</style>
