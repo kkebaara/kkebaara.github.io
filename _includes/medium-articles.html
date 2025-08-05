@@ -51,16 +51,18 @@ function displayMediumArticles(articles) {
     
     // Extract first image from content if available
     const imgMatch = article.content.match(/<img[^>]+src="([^">]+)"/);
-    const imageUrl = imgMatch ? imgMatch[1] : '/images/default-article.jpg';
+    const imageUrl = imgMatch ? imgMatch[1] : null;
     
     // Clean description
     const description = article.description.replace(/<[^>]*>/g, '').substring(0, 150) + '...';
     
     return `
       <div class="card">
+        ${imageUrl ? `
         <div class="image">
-          <img src="${imageUrl}" alt="${article.title}" onerror="this.src='/images/default-article.jpg'">
+          <img src="${imageUrl}" alt="${article.title}">
         </div>
+        ` : ''}
         <div class="content">
           <div class="header">${article.title}</div>
           <div class="meta">
