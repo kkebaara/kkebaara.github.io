@@ -22,6 +22,18 @@ description: Get in touch with Kenneth Kebaara for software development opportun
   .ui.button i.icon {
     margin-right: 0.3rem !important;
   }
+  
+  /* Hide text on very small screens, show only icons */
+  .social-text {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* Show abbreviated text on tablets */
+  .social-text {
+    font-size: 0.85rem;
+  }
 }
 
 /* Ensure buttons have consistent height */
@@ -66,8 +78,7 @@ description: Get in touch with Kenneth Kebaara for software development opportun
         <div class="column">
           <a class="ui fluid {{ profile.network }} button" href="{{ profile.url }}" target="_blank">
             <i class="{{ profile.network }} icon"></i>
-            <span class="mobile hidden">{{ profile.network | capitalize }}</span>
-            <span class="mobile only">{{ profile.network | slice: 0, 3 | capitalize }}</span>
+            <span class="social-text">{{ profile.network | capitalize }}</span>
           </a>
         </div>
         {% endfor %}
