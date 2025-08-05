@@ -2,7 +2,7 @@
 layout: essay
 type: essay
 title: "Building a Smart Cardio Monitor with Oura Ring API Integration"
-date: 2025-01-15
+date: 2025-07-15
 published: true
 labels:
   - React Native

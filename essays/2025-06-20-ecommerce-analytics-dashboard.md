@@ -2,7 +2,7 @@
 layout: essay
 type: essay
 title: "Building an End-to-End Analytics Solution: ECommerce Dashboard on Google Cloud Platform"
-date: 2025-01-20
+date: 2025-06-20
 published: true
 labels:
   - Data Analytics
