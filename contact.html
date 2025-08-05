@@ -6,6 +6,33 @@ description: Get in touch with Kenneth Kebaara for software development opportun
 
 {% include menubar.html active="contact" %}
 
+<style>
+/* Mobile-friendly social buttons */
+@media only screen and (max-width: 767px) {
+  .ui.grid > .column:not(.row) {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+  
+  .ui.button {
+    padding: 0.8rem 1rem !important;
+    font-size: 0.9rem !important;
+  }
+  
+  .ui.button i.icon {
+    margin-right: 0.3rem !important;
+  }
+}
+
+/* Ensure buttons have consistent height */
+.ui.fluid.button {
+  min-height: 2.5rem;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+</style>
+
 <div class="ui container" style="padding-top: 20px;">
   <div class="ui stackable two column grid">
     <div class="column">
@@ -34,11 +61,15 @@ description: Get in touch with Kenneth Kebaara for software development opportun
       </div>
       
       <div class="ui horizontal divider">Connect</div>
-      <div class="ui large buttons">
+      <div class="ui stackable four column grid" style="margin-top: 1rem;">
         {% for profile in site.data.bio.basics.profiles %}
-        <a class="ui {{ profile.network }} button" href="{{ profile.url }}" target="_blank">
-          <i class="{{ profile.network }} icon"></i> {{ profile.network | capitalize }}
-        </a>
+        <div class="column">
+          <a class="ui fluid {{ profile.network }} button" href="{{ profile.url }}" target="_blank">
+            <i class="{{ profile.network }} icon"></i>
+            <span class="mobile hidden">{{ profile.network | capitalize }}</span>
+            <span class="mobile only">{{ profile.network | slice: 0, 3 | capitalize }}</span>
+          </a>
+        </div>
         {% endfor %}
       </div>
     </div>
