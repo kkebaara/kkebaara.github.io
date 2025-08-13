@@ -12,9 +12,11 @@
   </title>
 
   <!-- SEO Meta Tags -->
-  <meta name="description" content="{% if page.description %}{{ page.description }}{% elsif page.summary %}{{ page.summary }}{% else %}{{ site.data.bio.basics.summary }}{% endif %}">
-  <meta name="keywords" content="{% if page.labels %}{{ page.labels | join: ', ' }}{% endif %}Kenneth Kebaara, Software Developer, Entrepreneur, SaaS, Web Development">
-  <meta name="author" content="{{ site.data.bio.basics.name }}">
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% elsif page.summary %}{{ page.summary }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="keywords" content="{% if page.labels %}{{ page.labels | join: ', ' }}{% else %}{{ site.keywords }}{% endif %}">
+  <meta name="author" content="{{ site.author }}">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#ffffff">
   
   <!-- Open Graph Meta Tags -->
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
@@ -33,7 +35,23 @@
   <meta name="twitter:image" content="{{ site.data.bio.basics.picture }}">
   
   <!-- Canonical URL -->
-  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}">
+  <!-- JSON-LD Structured Data for Portfolio -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "{{ site.author }}",
+    "url": "{{ site.url }}",
+    "image": "{{ site.data.bio.basics.picture }}",
+    "sameAs": [
+      "https://github.com/kkebaara",
+      "https://linkedin.com/in/kkebaara"
+    ],
+    "jobTitle": "Software Developer & Entrepreneur",
+    "description": "{{ site.description }}"
+  }
+  </script>
   
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/favicon.ico">
