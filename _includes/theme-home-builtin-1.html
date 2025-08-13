@@ -37,19 +37,22 @@
       <div class="center aligned extra content">
         {% include home-network-links.html %}
       </div>
-      <div class="center aligned content">
+      <div class="center aligned content" style="display: flex; justify-content: center; gap: 1em; flex-wrap: wrap;">
         <a href="{{ site.baseurl}}/projects/">
-          <button class="ui basic button">Projects ({{ num_projects }})</button>
+            <button class="ui green basic button">Projects ({{ num_projects }})</button>
         </a>
         <a href="{{ site.baseurl}}/essays/">
-          <button class="ui basic button">Essays ({{ num_essays }})</button>
+            <button class="ui green basic button">Essays ({{ num_essays }})</button>
         </a>
         <a href="{{ site.baseurl}}/bio/">
-          <button class="ui basic button">{{ site.bio-page-label }}</button>
+            <button class="ui green basic button">{{ site.bio-page-label }}</button>
         </a>
         <a href="{{ site.baseurl}}/contact.html">
-          <button class="ui basic button">Contact</button>
+            <button class="ui green basic button">Contact</button>
         </a>
+          <a href="https://kkebaara.github.io/DataAnalystPortfolio/index.html" target="_blank">
+            <button class="ui green basic button">Data Analyst Portfolio</button>
+          </a>
       </div>
     </div>
   </div>
