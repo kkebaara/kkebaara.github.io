@@ -1,12 +1,12 @@
 {
 	"basics": {
 		"name": "Kenneth Kebaara",
-		"label": "Full-Stack Software Developer & Technology Entrepreneur",
+	"label": "Full-Stack Software Developer, Data Analyst & Technology Entrepreneur",
 		"picture": "https://kebaara.com/images/main.jpg",
 		"email": "kkebaara@yahoo.com",
 		"phone": "720-967-9178",
 		"website": "https://kebaara.com",
-	"summary": "Dynamic full-stack software developer and entrepreneur with 10+ years of experience architecting scalable web and mobile applications. Expert in React Native, Firebase, Ruby on Rails, and modern JavaScript frameworks. As founder of USA2Kenya, I have delivered innovative, user-focused solutions that seamlessly connect technology with business strategy. Driven by a passion for solving real-world challenges, I create applications that enhance user experience and accelerate business growth.",
+	"summary": "Dynamic full-stack software developer, data analyst, and entrepreneur with 10+ years of experience architecting scalable web and mobile applications. Expert in React Native, Firebase, Ruby on Rails, modern JavaScript frameworks, and data analytics. As founder of USA2Kenya, I have delivered innovative, user-focused solutions that seamlessly connect technology with business strategy. Driven by a passion for solving real-world challenges, I create applications and analytics dashboards that enhance user experience and accelerate business growth.",
 		"location": {
 			"address": "",
 			"postalCode": "80205",
