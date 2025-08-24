@@ -58,11 +58,9 @@ function displayMediumArticles(articles) {
     
     return `
       <div class="card">
-        ${imageUrl ? `
         <div class="image">
-          <img src="${imageUrl}" alt="${article.title}">
+          <img src="${imageUrl ? imageUrl : '/images/default-essay.jpg'}" alt="${article.title}">
         </div>
-        ` : ''}
         <div class="content">
           <div class="header">${article.title}</div>
           <div class="meta">
