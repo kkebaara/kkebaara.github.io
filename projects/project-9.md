@@ -2,18 +2,15 @@
 layout: project
 type: project
 image: images/FBJHomepage.png
-title: FitByJonetics App 
-permalink: projects/FitbyJoneticsApp
+title: FitByJonetics
+permalink: projects/fbj
 # All dates must be YYYY-MM-DD format!
-date: 2025-08-25
+date: 2025-12-15
 labels:
-	- Fitness
-	- Analytics
-	- Mobile App
-	- React Native
-	- Wellness
-
-summary: Our proven solution positions your business in front of qualified customers searching for your products and services, delivering increased customer engagement and acquisition to dominate your market.coupons and polls. Phojis can be embedded in existing apps, push notifications, emails, and more.
+  - React Native
+  - React
+  - Mobile App
+summary: FitByJonetics is a modern fitness and wellness app focused on personalized training, step tracking, and analytics. The platform helps users achieve their fitness goals through personalized workout plans, daily step targets, and in-depth analytics. It features categories for Personal Trainers, Workouts, and Diet, as well as workout levels and recommendations for all fitness levels. Users can track their progress, engage with trainers, and access a comprehensive analytics dashboard for performance insights.
 
 projecturl: https://fitbyjonetics.com/
 ---
