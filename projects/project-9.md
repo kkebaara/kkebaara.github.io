@@ -1,9 +1,9 @@
 ---
 layout: project
 type: project
-image: images/FBJHompage.png
-title: FitByJonetics
-permalink: projects/FitByJonetics
+image: images/FBJHomepage.png
+title: FitByJoneticsApp
+permalink: projects/FitByJoneticsApp
 date: 2025-08-25
 labels:
 	- Fitness
@@ -14,6 +14,7 @@ labels:
 summary: FitByJonetics is a modern fitness and wellness app focused on personalized training, step tracking, and analytics.
 projecturl: https://fitbyjonetics.com/
 ---
+
 
 ## FitByJonetics: Personalized Fitness & Wellness
 
