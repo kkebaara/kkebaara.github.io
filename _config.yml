@@ -46,6 +46,19 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
+# Sitemap configuration
+sitemap:
+  exclude:
+    - /css/
+    - /js/
+    - /_site/
+    - /Gemfile*
+    - /_config.yml
+  include_articles: true
+  collections:
+    - projects
+    - essays
+
 # YOU NORMALLY NEVER CHANGE THE FOLLOWING
 markdown: kramdown
 include: [_data]

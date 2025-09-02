@@ -55,6 +55,15 @@
   
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/favicon.ico">
+  
+  <!-- Preconnect to external domains for performance -->
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- DNS prefetch for performance -->
+  <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
 
   <!-- Load Javascript and CSS for Semantic UI -->
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -63,6 +72,9 @@
   
   <!-- Site enhancements -->
   <script src="{{ site.baseurl }}/js/site-enhancements.js"></script>
+  
+  <!-- Performance monitoring -->
+  <script src="{{ site.baseurl }}/js/performance-monitor.js"></script>
 
   <!-- Load Techfolio CSS customizations -->
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl}}/css/stylesheet-default.css">
@@ -123,14 +135,8 @@
           src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   {% endif %}
 
-  <!-- Google Analytics 4 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YOUR-GA4-ID"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-YOUR-GA4-ID');
-  </script>
+  <!-- Include Analytics -->
+  {% include analytics.html %}
 
 <!-- Structured Data JSON-LD -->
 <script type="application/ld+json">
