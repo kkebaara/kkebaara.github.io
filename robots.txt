@@ -2,5 +2,9 @@ User-agent: *
 Allow: /
 Disallow: /css/
 Disallow: /js/
+Disallow: /_site/
+Disallow: /Gemfile*
+Disallow: /_config.yml
 
-Sitemap: https://kkebaara.github.io/sitemap.xml
+# Sitemap
+Sitemap: https://kebaara.com/sitemap.xml
