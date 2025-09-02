@@ -50,26 +50,118 @@ layout: null
     <priority>0.7</priority>
   </url>
   
-  <!-- Individual Projects -->
-  {% for project in site.projects %}
+  <!-- Individual Projects with Content -->
   <url>
-    <loc>{{ site.url }}{{ project.url }}</loc>
-    <lastmod>{{ project.date | date_to_xmlschema | default: site.time | date_to_xmlschema }}</lastmod>
+    <loc>{{ site.url }}/projects/project-1.html</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-  {% endfor %}
   
-  <!-- Individual Essays -->
-  {% for essay in site.essays %}
-  {% if essay.published != false %}
   <url>
-    <loc>{{ site.url }}{{ essay.url }}</loc>
-    <lastmod>{{ essay.date | date_to_xmlschema | default: site.time | date_to_xmlschema }}</lastmod>
+    <loc>{{ site.url }}/projects/project-2.html</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>{{ site.url }}/projects/project-3.html</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>{{ site.url }}/projects/project-4.html</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>{{ site.url }}/projects/project-5.html</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>{{ site.url }}/projects/project-6.html</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>{{ site.url }}/projects/project-7.html</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>{{ site.url }}/projects/project-8.html</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>{{ site.url }}/projects/project-9.html</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Individual Essays with Content -->
+  <url>
+    <loc>{{ site.url }}/essays/2015-08-26.html</loc>
+    <lastmod>2015-08-26T00:00:00+00:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
-  {% endif %}
-  {% endfor %}
+  
+  <url>
+    <loc>{{ site.url }}/essays/2015-09-08.html</loc>
+    <lastmod>2015-09-08T00:00:00+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>{{ site.url }}/essays/2016-02-06.html</loc>
+    <lastmod>2016-02-06T00:00:00+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>{{ site.url }}/essays/2020-06-01.html</loc>
+    <lastmod>2020-06-01T00:00:00+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>{{ site.url }}/essays/2025-02-01.html</loc>
+    <lastmod>2025-02-01T00:00:00+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>{{ site.url }}/essays/2025-06-20-ecommerce-analytics-dashboard.html</loc>
+    <lastmod>2025-06-20T00:00:00+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>{{ site.url }}/essays/2025-07-15-oura-ring-cardio-monitor.html</loc>
+    <lastmod>2025-07-15T00:00:00+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
   
 </urlset>
