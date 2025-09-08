@@ -38,7 +38,7 @@
   <meta name="twitter:image" content="{{ site.data.bio.basics.picture }}">
   
   <!-- Canonical URL -->
-  <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}">
+  <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' | replace:'/index.html','/' }}">
   <!-- JSON-LD Structured Data for Portfolio -->
   <script type="application/ld+json">
   {

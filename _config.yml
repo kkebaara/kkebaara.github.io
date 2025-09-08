@@ -42,6 +42,19 @@ collections:
     output: true
     permalink: /:collection/:name/
 
+# Default front matter for collections
+defaults:
+  - scope:
+      path: "projects"
+      type: "projects"
+    values:
+      layout: "project"
+  - scope:
+      path: "essays"
+      type: "essays"
+    values:
+      layout: "essay"
+
 # Plugins
 plugins:
   - jekyll-sitemap
