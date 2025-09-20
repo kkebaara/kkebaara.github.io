@@ -8,12 +8,19 @@
 
   <div class="fourteen wide column no-bottom">
     {% for entry in site.data.bio.skills %}
-      <p class="ui no-bottom">
-      <b>{{ entry.name }}:</b>
-      {% for keyword in entry.keywords %}
-        {{ keyword }}{% if forloop.last != true %}, {% endif %}
-      {% endfor %}
-      </p>
+    <div class="ui grid">
+      <div class="twelve wide column no-bottom">
+        <p class="ui no-bottom"><b>{{ entry.name }}</b></p>
+        <p class="ui no-bottom">
+        {% for keyword in entry.keywords %}
+          {{ keyword }}{% if forloop.last != true %}, {% endif %}
+        {% endfor %}
+        </p>
+      </div>
+      <div class="four wide right aligned column no-bottom">
+        <p class="ui no-bottom"><b>{{ entry.level }}</b></p>
+      </div>
+    </div>
     {% endfor %}
   </div>
 </div>

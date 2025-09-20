@@ -9,13 +9,16 @@
     <div class="ui grid">
       <div class="twelve wide column no-bottom">
         <p class="ui no-bottom"><b>{{ cert.name }}</b></p>
-        <p class="ui no-bottom">{{ cert.issuer }} • {{ cert.date }}</p>
+        <p class="ui no-bottom">{{ cert.issuer }}</p>
         {% if cert.summary %}
         <p class="ui no-bottom">{{ cert.summary }}</p>
         {% endif %}
         {% if cert.url %}
         <p class="ui no-bottom"><a href="{{ cert.url }}" target="_blank">{{ cert.url }}</a></p>
         {% endif %}
+      </div>
+      <div class="four wide right aligned column no-bottom">
+        <p class="ui no-bottom"><b>{{ cert.date }}</b></p>
       </div>
     </div>
     {% endfor %}
