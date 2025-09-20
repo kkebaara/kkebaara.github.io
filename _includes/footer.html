@@ -1,5 +1,186 @@
-<!-- Always create iframes to embed videos if present. See: http://semantic-ui.com/modules/embed.html -->
+<!-- Professional Footer -->
+<footer class="ui inverted vertical footer segment" style="background: linear-gradient(135deg, #1b1c1d 0%, #2c3e50 100%); margin-top: 60px; padding: 40px 0;">
+  <div class="ui container">
+    <div class="ui stackable inverted divided equal height stackable grid">
+      
+      <!-- About Section -->
+      <div class="three wide column">
+        <h4 class="ui inverted header">
+          <i class="user icon"></i>
+          About
+        </h4>
+        <div class="ui inverted link list">
+          <a href="{{ site.baseurl }}/bio/" class="item">Resume</a>
+          <a href="{{ site.baseurl }}/projects/" class="item">Projects</a>
+          <a href="{{ site.baseurl }}/essays/" class="item">Essays</a>
+          <a href="{{ site.baseurl }}/testimonials.html" class="item">Testimonials</a>
+        </div>
+      </div>
+      
+      <!-- Contact Section -->
+      <div class="three wide column">
+        <h4 class="ui inverted header">
+          <i class="mail icon"></i>
+          Contact
+        </h4>
+        <div class="ui inverted link list">
+          <a href="mailto:{{ site.data.bio.basics.email }}" class="item">
+            <i class="mail icon"></i>
+            {{ site.data.bio.basics.email }}
+          </a>
+          <a href="tel:{{ site.data.bio.basics.phone }}" class="item">
+            <i class="phone icon"></i>
+            {{ site.data.bio.basics.phone }}
+          </a>
+          <a href="{{ site.baseurl }}/contact.html" class="item">
+            <i class="comment icon"></i>
+            Get in Touch
+          </a>
+        </div>
+      </div>
+      
+      <!-- Social Links -->
+      <div class="three wide column">
+        <h4 class="ui inverted header">
+          <i class="share icon"></i>
+          Connect
+        </h4>
+        <div class="ui inverted link list">
+          {% for profile in site.data.bio.basics.profiles %}
+          <a href="{{ profile.url }}" target="_blank" class="item">
+            <i class="{{ profile.network }} icon"></i>
+            {{ profile.network | capitalize }}
+          </a>
+          {% endfor %}
+        </div>
+      </div>
+      
+      <!-- Portfolio Links -->
+      <div class="seven wide column">
+        <h4 class="ui inverted header">
+          <i class="briefcase icon"></i>
+          Portfolio
+        </h4>
+        <div class="ui inverted link list">
+          <a href="https://kkebaara.github.io/DataAnalystPortfolio/index.html" target="_blank" class="item">
+            <i class="chart bar icon"></i>
+            Data Analyst Portfolio
+          </a>
+          <a href="https://ouraringhistory.netlify.app/" target="_blank" class="item">
+            <i class="heartbeat icon"></i>
+            Oura Ring App
+          </a>
+          <a href="{{ site.baseurl }}/projects/" class="item">
+            <i class="folder icon"></i>
+            All Projects
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Copyright and Additional Info -->
+    <div class="ui inverted section divider" style="margin: 30px 0 20px 0;"></div>
+    <div class="ui stackable inverted divided equal height stackable grid">
+      <div class="eight wide column">
+        <p style="color: #bbb; margin: 0;">
+          © {{ 'now' | date: "%Y" }} {{ site.data.bio.basics.name }}. All rights reserved.
+        </p>
+        <p style="color: #999; margin: 5px 0 0 0; font-size: 0.9em;">
+          Built with Jekyll & Semantic UI • Hosted on GitHub Pages
+        </p>
+      </div>
+      <div class="eight wide column right aligned">
+        <div class="ui horizontal inverted small divided link list">
+          <a href="{{ site.baseurl }}/" class="item">Home</a>
+          <a href="{{ site.baseurl }}/bio/" class="item">Resume</a>
+          <a href="{{ site.baseurl }}/contact.html" class="item">Contact</a>
+          <a href="https://github.com/kkebaara" target="_blank" class="item">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
 
+<!-- Back to Top Button -->
+<div id="back-to-top" class="ui circular icon button" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000; display: none; background: #2185d0; color: white;">
+  <i class="chevron up icon"></i>
+</div>
+
+<!-- Footer Scripts -->
 <script>
+  // Initialize Semantic UI components
   $('.ui.embed').embed();
+  
+  // Back to top functionality
+  $(document).ready(function() {
+    // Show/hide back to top button
+    $(window).scroll(function() {
+      if ($(this).scrollTop() > 300) {
+        $('#back-to-top').fadeIn();
+      } else {
+        $('#back-to-top').fadeOut();
+      }
+    });
+    
+    // Back to top click handler
+    $('#back-to-top').click(function() {
+      $('html, body').animate({scrollTop: 0}, 800);
+      return false;
+    });
+    
+    // Smooth scrolling for anchor links
+    $('a[href*="#"]:not([href="#"])').click(function() {
+      if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: target.offset().top - 80
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  });
 </script>
+
+<!-- Additional CSS for footer styling -->
+<style>
+  .ui.inverted.vertical.footer.segment {
+    border-top: 3px solid #2185d0;
+  }
+  
+  .ui.inverted.vertical.footer.segment h4 {
+    color: #2185d0 !important;
+    margin-bottom: 15px;
+  }
+  
+  .ui.inverted.vertical.footer.segment .item {
+    color: #bbb !important;
+    transition: color 0.3s ease;
+  }
+  
+  .ui.inverted.vertical.footer.segment .item:hover {
+    color: #2185d0 !important;
+  }
+  
+  #back-to-top {
+    transition: all 0.3s ease;
+  }
+  
+  #back-to-top:hover {
+    background: #1678c2 !important;
+    transform: translateY(-2px);
+  }
+  
+  /* Ensure proper spacing on all pages */
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .ui.container {
+    flex: 1;
+  }
+</style>
