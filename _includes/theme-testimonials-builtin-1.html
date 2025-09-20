@@ -163,7 +163,16 @@
 </div>
 
 <script>
-$('.ui.rating').rating('disable');
+$(document).ready(function() {
+  // Initialize star ratings with 5 stars
+  $('.ui.rating').rating({
+    maxRating: 5,
+    interactive: false
+  });
+  
+  // Set all ratings to 5 stars
+  $('.ui.rating').rating('set rating', 5);
+});
 </script>
 
 <!-- Testimonials Structured Data -->
@@ -223,6 +232,57 @@ $('.ui.rating').rating('disable');
       "publisher": {
         "@type": "Organization",
         "name": "TechStartup Inc"
+      }
+    },
+    {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "David Kim"
+      },
+      "reviewBody": "Kenneth's React Native expertise helped us launch our app ahead of schedule. His clean code and documentation made future maintenance a breeze.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "MobileFirst"
+      }
+    },
+    {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Emily Watson"
+      },
+      "reviewBody": "The analytics dashboard Kenneth built transformed how we make business decisions. His data visualization skills are exceptional.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "FinTech Solutions"
+      }
+    },
+    {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Alex Thompson"
+      },
+      "reviewBody": "Kenneth's entrepreneurial approach to development means he thinks beyond just coding - he considers business impact and user value.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "StartupHub"
       }
     }
   ]
