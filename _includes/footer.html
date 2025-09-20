@@ -2,7 +2,7 @@
 <footer class="ui inverted vertical footer segment" style="background: linear-gradient(135deg, #1b1c1d 0%, #2c3e50 100%); margin-top: 40px; padding: 40px 0 20px 0;">
   <div class="ui container">
     <!-- Main Footer Content -->
-    <div class="ui stackable four column grid" style="margin-bottom: 30px;">
+    <div class="ui stackable four column grid" style="margin-bottom: 30px; align-items: flex-start;">
       
       <!-- About Section -->
       <div class="column">
@@ -80,18 +80,18 @@
     </div>
     
     <!-- Copyright Section -->
-    <div class="ui inverted section divider" style="margin: 20px 0;"></div>
-    <div class="ui stackable two column grid">
+    <div class="ui inverted section divider" style="margin: 30px 0 20px 0;"></div>
+    <div class="ui stackable two column grid" style="align-items: center;">
       <div class="column">
-        <p style="color: #bbb; margin: 0; font-size: 0.9em;">
-          © {{ 'now' | date: "%Y" }} {{ site.data.bio.basics.name }}. All rights reserved.
-        </p>
-        <p style="color: #999; margin: 5px 0 0 0; font-size: 0.85em;">
-          Built with Jekyll & Semantic UI • Hosted on GitHub Pages
-        </p>
+        <div style="color: #bbb; font-size: 0.9em; line-height: 1.4;">
+          <div>© {{ 'now' | date: "%Y" }} {{ site.data.bio.basics.name }}. All rights reserved.</div>
+          <div style="color: #999; font-size: 0.85em; margin-top: 5px;">
+            Built with Jekyll & Semantic UI • Hosted on GitHub Pages
+          </div>
+        </div>
       </div>
       <div class="column" style="text-align: right;">
-        <div class="ui horizontal inverted small divided link list">
+        <div class="ui horizontal inverted small divided link list" style="justify-content: flex-end;">
           <a href="{{ site.baseurl }}/" class="item">Home</a>
           <a href="{{ site.baseurl }}/bio/" class="item">Resume</a>
           <a href="{{ site.baseurl }}/contact.html" class="item">Contact</a>
@@ -224,6 +224,16 @@
     .ui.stackable.two.column.grid > .column:last-child {
       text-align: center !important;
       margin-top: 15px;
+    }
+    
+    .ui.stackable.two.column.grid > .column:last-child .ui.horizontal.link.list {
+      justify-content: center !important;
+    }
+    
+    /* Better mobile copyright section */
+    .ui.stackable.two.column.grid > .column:first-child {
+      text-align: center;
+      margin-bottom: 10px;
     }
   }
   
