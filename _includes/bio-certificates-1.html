@@ -1,0 +1,33 @@
+{% if site.data.bio.certificates %}
+<div class="sixteen wide column">
+  <h3 class="ui left aligned header no-bottom">
+    <i class="certificate icon"></i>
+    Certifications
+  </h3>
+  <hr style="margin: 0px;">
+  <div class="ui relaxed list">
+    {% for cert in site.data.bio.certificates %}
+    <div class="item">
+      <div class="content">
+        <div class="header">
+          {{ cert.name }}
+          {% if cert.url %}
+            <a href="{{ cert.url }}" target="_blank" style="margin-left: 5px;">
+              <i class="external link icon"></i>
+            </a>
+          {% endif %}
+        </div>
+        <div class="meta">
+          {{ cert.issuer }} • {{ cert.date }}
+        </div>
+        {% if cert.summary %}
+        <div class="description">
+          {{ cert.summary }}
+        </div>
+        {% endif %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endif %}

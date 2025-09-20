@@ -240,22 +240,46 @@
 
 	"certificates": [
 		{
-			"name": "Software Engineering Certificate",
+			"name": "Certified Professional Project Manager",
+			"date": "2024",
+			"issuer": "Opus School of Business",
+			"url": "",
+			"summary": "Earned certification demonstrating expertise in project management principles, methodologies, and practices, including planning, execution, and closing projects."
+		},
+		{
+			"name": "Gen AI School",
+			"date": "2024",
+			"issuer": "Google for Startups",
+			"url": "https://startup.google.com",
+			"summary": "Participated in an immersive AI training program focused on Large Language Models (LLMs) and Google Cloud AI solutions. Developed AI-driven prototypes and applications, gaining insights into AI infrastructure and ethical practices."
+		},
+		{
+			"name": "Software Engineering Certification",
 			"date": "2022",
 			"issuer": "Flatiron School",
-			"url": "https://flatironschool.com"
+			"url": "https://flatironschool.com",
+			"summary": "Completed intensive full-stack software engineering program. Gained hands-on experience in React, Python, SQL, building applications and practicing agile methodologies."
+		},
+		{
+			"name": "Cloud Data Analytics Certification",
+			"date": "2023",
+			"issuer": "Google",
+			"url": "https://cloud.google.com",
+			"summary": "Completed certification covering cloud data analysis (collection, processing, storage, analysis, visualization) using BigQuery, Cloud Storage, and Looker. Demonstrated proficiency in SQL and building BI dashboards."
 		},
 		{
 			"name": "Project Management Professional (PMP) Preparation",
 			"date": "2014",
 			"issuer": "University of St Thomas",
-			"url": ""
+			"url": "",
+			"summary": "Comprehensive project management training covering PMI methodologies and best practices."
 		},
 		{
 			"name": "Brand Strategy Certificate",
 			"date": "2012",
 			"issuer": "Miami Ad School",
-			"url": ""
+			"url": "",
+			"summary": "Strategic brand development and marketing communications certification."
 		}
 	],
 
