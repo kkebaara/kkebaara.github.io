@@ -8,18 +8,18 @@
 
 <div class="nonprintable">
   <nav class="ui stackable menu">
-    <a href="{{ site.baseurl}}/" class="brand item">
+    <a href="{{ site.baseurl}}/" class="brand item{% if page.url == '/' or page.url == '/index.html' %} active{% endif %}">
       <img class="ui avatar image" src="{{ site.data.bio.basics.picture }}"><span>{{ site.data.bio.basics.name }}</span>
     </a>
     {% if num_projects > 0 %}
-    <a href="{{ site.baseurl }}/projects" class=" {% if include.active == "projects" %} active {% endif %}item">Projects ({{ num_projects }})</a>
+    <a href="{{ site.baseurl }}/projects" class="{% if page.url contains '/projects' %} active {% endif %}item">Projects ({{ num_projects }})</a>
     {% endif %}
     {% if num_essays > 0 %}
-    <a href="{{ site.baseurl }}/essays" class=" {% if include.active == "essays" %} active {% endif %} item">Essays ({{ num_essays }})</a>
+    <a href="{{ site.baseurl }}/essays" class="{% if page.url contains '/essays' %} active {% endif %} item">Essays ({{ num_essays }})</a>
     {% endif %}
-    <a href="{{ site.baseurl }}/bio" class=" {% if include.active == "bio" %} active {% endif %} item">{{ site.bio-page-label }}</a>
-    <a href="{{ site.baseurl }}/testimonials" class=" {% if include.active == "testimonials" %} active {% endif %} item">Testimonials</a>
-    <a href="{{ site.baseurl }}/contact" class=" {% if include.active == "contact" %} active {% endif %} item">Contact</a>
+    <a href="{{ site.baseurl }}/bio" class="{% if page.url contains '/bio' %} active {% endif %} item">{{ site.bio-page-label }}</a>
+    <a href="{{ site.baseurl }}/testimonials" class="{% if page.url contains '/testimonials' %} active {% endif %} item">Testimonials</a>
+    <a href="{{ site.baseurl }}/contact" class="{% if page.url contains '/contact' %} active {% endif %} item">Contact</a>
     
     <div class="right menu">
       <div class="item">
