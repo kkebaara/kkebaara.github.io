@@ -64,6 +64,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   
+  <!-- Image optimization hints -->
+  <link rel="preload" as="image" href="{{ site.data.bio.basics.picture }}">
+  
   <!-- DNS prefetch for performance -->
   <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
   <link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -184,17 +187,54 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "CreativeWork",
+  "@type": "SoftwareApplication",
   "name": "{{ page.title }}",
   "description": "{{ page.summary }}",
   "author": {
     "@type": "Person",
-    "name": "{{ site.data.bio.basics.name }}"
+    "name": "{{ site.data.bio.basics.name }}",
+    "url": "{{ site.url }}"
   },
   "dateCreated": "{{ page.date }}",
+  "dateModified": "{{ page.date }}",
   "url": "{{ site.url }}{{ page.url }}",
   "image": "{{ site.url }}/{{ page.image }}",
-  "keywords": "{{ page.labels | join: ', ' }}"
+  "keywords": "{{ page.labels | join: ', ' }}",
+  "applicationCategory": "DeveloperApplication",
+  "operatingSystem": "Web, Mobile",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+{% endif %}
+
+{% if page.layout == "essay" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{ page.title }}",
+  "description": "{{ page.summary | default: page.excerpt }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ site.data.bio.basics.name }}",
+    "url": "{{ site.url }}"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "{{ site.data.bio.basics.name }}",
+    "url": "{{ site.url }}"
+  },
+  "datePublished": "{{ page.date }}",
+  "dateModified": "{{ page.date }}",
+  "url": "{{ site.url }}{{ page.url }}",
+  "image": "{{ site.url }}/{{ page.image | default: site.data.bio.basics.picture }}",
+  "keywords": "{{ page.labels | join: ', ' }}",
+  "articleSection": "Technology",
+  "wordCount": "{{ page.content | number_of_words }}"
 }
 </script>
 {% endif %}
