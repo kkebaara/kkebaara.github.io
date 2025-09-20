@@ -6,32 +6,16 @@
 
   <div class="fourteen wide column no-bottom">
     {% for cert in site.data.bio.certificates %}
-    <div class="ui segment" style="margin-bottom: 15px; padding: 15px;">
-      <div class="ui grid">
-        <div class="twelve wide column no-bottom">
-          <h4 class="ui header no-bottom" style="color: #2185d0;">
-            <i class="certificate icon"></i>
-            <div class="content">
-              {{ cert.name }}
-              {% if cert.url %}
-                <a href="{{ cert.url }}" target="_blank" style="margin-left: 8px; color: #666;">
-                  <i class="external link icon"></i>
-                </a>
-              {% endif %}
-              <div class="sub header">{{ cert.issuer }} • {{ cert.date }}</div>
-            </div>
-          </h4>
-          {% if cert.summary %}
-          <p class="ui no-bottom" style="margin-top: 8px; color: #555; font-size: 0.9em;">
-            {{ cert.summary }}
-          </p>
-          {% endif %}
-        </div>
-        <div class="four wide right aligned column no-bottom">
-          <div class="ui mini label" style="background-color: #e8f4fd; color: #2185d0;">
-            {{ cert.date }}
-          </div>
-        </div>
+    <div class="ui grid">
+      <div class="twelve wide column no-bottom">
+        <p class="ui no-bottom"><b>{{ cert.name }}</b></p>
+        <p class="ui no-bottom">{{ cert.issuer }} • {{ cert.date }}</p>
+        {% if cert.summary %}
+        <p class="ui no-bottom">{{ cert.summary }}</p>
+        {% endif %}
+        {% if cert.url %}
+        <p class="ui no-bottom"><a href="{{ cert.url }}" target="_blank">{{ cert.url }}</a></p>
+        {% endif %}
       </div>
     </div>
     {% endfor %}
