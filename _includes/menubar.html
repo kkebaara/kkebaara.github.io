@@ -9,7 +9,7 @@
 <div class="nonprintable">
   <nav class="ui stackable menu">
     <a href="{{ site.baseurl}}/" class="brand item{% if page.url == '/' or page.url == '/index.html' %} active{% endif %}">
-      <img class="ui avatar image" src="{{ site.data.bio.basics.picture }}"><span>{{ site.data.bio.basics.name }}</span>
+      <img class="ui avatar image" src="{{ site.baseurl }}/{{ site.data.bio.basics.picture }}"><span>{{ site.data.bio.basics.name }}</span>
     </a>
     {% if num_projects > 0 %}
     <a href="{{ site.baseurl }}/projects" class="{% if page.url contains '/projects' %} active {% endif %}item">Projects ({{ num_projects }})</a>
