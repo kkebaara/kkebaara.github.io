@@ -1,38 +1,39 @@
 <!-- Professional Footer -->
-<footer class="ui inverted vertical footer segment" style="background: linear-gradient(135deg, #1b1c1d 0%, #2c3e50 100%); margin-top: 40px; padding: 30px 0;">
+<footer class="ui inverted vertical footer segment" style="background: linear-gradient(135deg, #1b1c1d 0%, #2c3e50 100%); margin-top: 40px; padding: 40px 0 20px 0;">
   <div class="ui container">
-    <div class="ui stackable inverted divided equal height stackable grid">
+    <!-- Main Footer Content -->
+    <div class="ui stackable four column grid" style="margin-bottom: 30px;">
       
       <!-- About Section -->
-      <div class="four wide tablet eight wide mobile column">
-        <h4 class="ui inverted header" style="margin-bottom: 20px;">
+      <div class="column">
+        <h4 class="ui inverted header" style="margin-bottom: 15px; color: #2185d0;">
           <i class="user icon"></i>
-          About
+          <div class="content">About</div>
         </h4>
-        <div class="ui inverted link list" style="margin-bottom: 20px;">
-          <a href="{{ site.baseurl }}/bio/" class="item" style="padding: 8px 0; font-size: 0.95em;">Resume</a>
-          <a href="{{ site.baseurl }}/projects/" class="item" style="padding: 8px 0; font-size: 0.95em;">Projects</a>
-          <a href="{{ site.baseurl }}/essays/" class="item" style="padding: 8px 0; font-size: 0.95em;">Essays</a>
-          <a href="{{ site.baseurl }}/testimonials.html" class="item" style="padding: 8px 0; font-size: 0.95em;">Testimonials</a>
+        <div class="ui inverted link list">
+          <a href="{{ site.baseurl }}/bio/" class="item">Resume</a>
+          <a href="{{ site.baseurl }}/projects/" class="item">Projects</a>
+          <a href="{{ site.baseurl }}/essays/" class="item">Essays</a>
+          <a href="{{ site.baseurl }}/testimonials.html" class="item">Testimonials</a>
         </div>
       </div>
       
       <!-- Contact Section -->
-      <div class="four wide tablet eight wide mobile column">
-        <h4 class="ui inverted header" style="margin-bottom: 20px;">
+      <div class="column">
+        <h4 class="ui inverted header" style="margin-bottom: 15px; color: #2185d0;">
           <i class="mail icon"></i>
-          Contact
+          <div class="content">Contact</div>
         </h4>
-        <div class="ui inverted link list" style="margin-bottom: 20px;">
-          <a href="mailto:{{ site.data.bio.basics.email }}" class="item" style="padding: 8px 0; font-size: 0.95em;">
+        <div class="ui inverted link list">
+          <a href="mailto:{{ site.data.bio.basics.email }}" class="item">
             <i class="mail icon"></i>
-            {{ site.data.bio.basics.email }}
+            Email
           </a>
-          <a href="tel:{{ site.data.bio.basics.phone }}" class="item" style="padding: 8px 0; font-size: 0.95em;">
+          <a href="tel:{{ site.data.bio.basics.phone }}" class="item">
             <i class="phone icon"></i>
-            {{ site.data.bio.basics.phone }}
+            Phone
           </a>
-          <a href="{{ site.baseurl }}/contact.html" class="item" style="padding: 8px 0; font-size: 0.95em;">
+          <a href="{{ site.baseurl }}/contact.html" class="item">
             <i class="comment icon"></i>
             Get in Touch
           </a>
@@ -40,14 +41,14 @@
       </div>
       
       <!-- Social Links -->
-      <div class="four wide tablet eight wide mobile column">
-        <h4 class="ui inverted header" style="margin-bottom: 20px;">
+      <div class="column">
+        <h4 class="ui inverted header" style="margin-bottom: 15px; color: #2185d0;">
           <i class="share icon"></i>
-          Connect
+          <div class="content">Connect</div>
         </h4>
-        <div class="ui inverted link list" style="margin-bottom: 20px;">
+        <div class="ui inverted link list">
           {% for profile in site.data.bio.basics.profiles %}
-          <a href="{{ profile.url }}" target="_blank" class="item" style="padding: 8px 0; font-size: 0.95em;">
+          <a href="{{ profile.url }}" target="_blank" class="item">
             <i class="{{ profile.network }} icon"></i>
             {{ profile.network | capitalize }}
           </a>
@@ -56,21 +57,21 @@
       </div>
       
       <!-- Portfolio Links -->
-      <div class="four wide tablet sixteen wide mobile column">
-        <h4 class="ui inverted header" style="margin-bottom: 20px;">
+      <div class="column">
+        <h4 class="ui inverted header" style="margin-bottom: 15px; color: #2185d0;">
           <i class="briefcase icon"></i>
-          Portfolio
+          <div class="content">Portfolio</div>
         </h4>
-        <div class="ui inverted link list" style="margin-bottom: 20px;">
-          <a href="https://kkebaara.github.io/DataAnalystPortfolio/index.html" target="_blank" class="item" style="padding: 8px 0; font-size: 0.95em;">
+        <div class="ui inverted link list">
+          <a href="https://kkebaara.github.io/DataAnalystPortfolio/index.html" target="_blank" class="item">
             <i class="chart bar icon"></i>
-            Data Analyst Portfolio
+            Data Analytics
           </a>
-          <a href="https://ouraringhistory.netlify.app/" target="_blank" class="item" style="padding: 8px 0; font-size: 0.95em;">
+          <a href="https://ouraringhistory.netlify.app/" target="_blank" class="item">
             <i class="heartbeat icon"></i>
             Oura Ring App
           </a>
-          <a href="{{ site.baseurl }}/projects/" class="item" style="padding: 8px 0; font-size: 0.95em;">
+          <a href="{{ site.baseurl }}/projects/" class="item">
             <i class="folder icon"></i>
             All Projects
           </a>
@@ -78,23 +79,23 @@
       </div>
     </div>
     
-    <!-- Copyright and Additional Info -->
-    <div class="ui inverted section divider" style="margin: 25px 0 15px 0;"></div>
-    <div class="ui stackable inverted divided equal height stackable grid">
-      <div class="eight wide tablet sixteen wide mobile column">
-        <p style="color: #bbb; margin: 0; font-size: 0.9em; line-height: 1.4;">
+    <!-- Copyright Section -->
+    <div class="ui inverted section divider" style="margin: 20px 0;"></div>
+    <div class="ui stackable two column grid">
+      <div class="column">
+        <p style="color: #bbb; margin: 0; font-size: 0.9em;">
           © {{ 'now' | date: "%Y" }} {{ site.data.bio.basics.name }}. All rights reserved.
         </p>
-        <p style="color: #999; margin: 5px 0 0 0; font-size: 0.85em; line-height: 1.4;">
+        <p style="color: #999; margin: 5px 0 0 0; font-size: 0.85em;">
           Built with Jekyll & Semantic UI • Hosted on GitHub Pages
         </p>
       </div>
-      <div class="eight wide tablet sixteen wide mobile column" style="text-align: center;">
-        <div class="ui horizontal inverted small divided link list" style="justify-content: center; flex-wrap: wrap;">
-          <a href="{{ site.baseurl }}/" class="item" style="padding: 5px 10px; font-size: 0.9em;">Home</a>
-          <a href="{{ site.baseurl }}/bio/" class="item" style="padding: 5px 10px; font-size: 0.9em;">Resume</a>
-          <a href="{{ site.baseurl }}/contact.html" class="item" style="padding: 5px 10px; font-size: 0.9em;">Contact</a>
-          <a href="https://github.com/kkebaara" target="_blank" class="item" style="padding: 5px 10px; font-size: 0.9em;">GitHub</a>
+      <div class="column" style="text-align: right;">
+        <div class="ui horizontal inverted small divided link list">
+          <a href="{{ site.baseurl }}/" class="item">Home</a>
+          <a href="{{ site.baseurl }}/bio/" class="item">Resume</a>
+          <a href="{{ site.baseurl }}/contact.html" class="item">Contact</a>
+          <a href="https://github.com/kkebaara" target="_blank" class="item">GitHub</a>
         </div>
       </div>
     </div>
@@ -144,8 +145,9 @@
   });
 </script>
 
-<!-- Additional CSS for footer styling -->
+<!-- Footer Styling -->
 <style>
+  /* Footer base styles */
   .ui.inverted.vertical.footer.segment {
     border-top: 3px solid #2185d0;
   }
@@ -159,15 +161,15 @@
   .ui.inverted.vertical.footer.segment .item {
     color: #bbb !important;
     transition: color 0.3s ease;
-    min-height: 44px; /* Touch target size */
-    display: flex;
-    align-items: center;
+    padding: 8px 0;
+    display: block;
   }
   
   .ui.inverted.vertical.footer.segment .item:hover {
     color: #2185d0 !important;
   }
   
+  /* Back to top button */
   #back-to-top {
     transition: all 0.3s ease;
     min-width: 50px;
@@ -179,21 +181,10 @@
     transform: translateY(-2px);
   }
   
-  /* Ensure proper spacing on all pages */
-  body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .ui.container {
-    flex: 1;
-  }
-  
   /* Mobile optimizations */
   @media only screen and (max-width: 767px) {
     .ui.inverted.vertical.footer.segment {
-      padding: 15px 0;
+      padding: 20px 0 15px 0;
       margin-top: 20px;
     }
     
@@ -203,66 +194,55 @@
     }
     
     .ui.inverted.vertical.footer.segment .item {
-      font-size: 0.85em !important;
-      padding: 6px 0 !important;
-      min-height: 40px;
-      line-height: 1.3;
+      font-size: 0.9em;
+      padding: 6px 0;
     }
     
     .ui.inverted.vertical.footer.segment .ui.horizontal.link.list {
-      justify-content: center !important;
+      justify-content: center;
       flex-wrap: wrap;
     }
     
     .ui.inverted.vertical.footer.segment .ui.horizontal.link.list .item {
-      padding: 6px 8px !important;
-      margin: 1px;
-      font-size: 0.8em;
+      padding: 4px 8px;
+      margin: 2px;
+      font-size: 0.85em;
     }
     
     #back-to-top {
       bottom: 15px;
       right: 15px;
-      min-width: 40px;
-      min-height: 40px;
+      min-width: 45px;
+      min-height: 45px;
     }
     
-    /* Better spacing for mobile */
-    .ui.stackable.grid > .column {
-      padding-bottom: 10px;
+    /* Mobile grid adjustments */
+    .ui.stackable.four.column.grid > .column {
+      padding-bottom: 20px;
     }
     
-    /* Improve footer grid layout on mobile */
-    .ui.stackable.inverted.divided.equal.height.stackable.grid {
-      margin: 0;
-    }
-    
-    .ui.stackable.inverted.divided.equal.height.stackable.grid > .column {
-      padding-left: 10px;
-      padding-right: 10px;
+    .ui.stackable.two.column.grid > .column:last-child {
+      text-align: center !important;
+      margin-top: 15px;
     }
   }
   
   /* Tablet optimizations */
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .ui.inverted.vertical.footer.segment {
-      padding: 25px 0;
-      margin-top: 35px;
+      padding: 30px 0 20px 0;
+      margin-top: 30px;
     }
     
     .ui.inverted.vertical.footer.segment .item {
-      padding: 9px 0 !important;
-      min-height: 46px;
+      padding: 7px 0;
     }
   }
   
-  /* Ensure proper line height for better readability */
-  .ui.inverted.vertical.footer.segment p {
-    line-height: 1.5;
-  }
-  
-  /* Better spacing between sections */
-  .ui.inverted.vertical.footer.segment .ui.stackable.grid > .column:not(:last-child) {
-    margin-bottom: 10px;
+  /* Desktop optimizations */
+  @media only screen and (min-width: 1024px) {
+    .ui.inverted.vertical.footer.segment {
+      padding: 40px 0 20px 0;
+    }
   }
 </style>
