@@ -83,9 +83,11 @@
     <div class="ui inverted section divider" style="margin: 30px 0 20px 0;"></div>
     <div class="ui stackable two column grid" style="align-items: center;">
       <div class="column">
-        <div style="color: #bbb; font-size: 0.9em; line-height: 1.4;">
-          <div>© {{ 'now' | date: "%Y" }} {{ site.data.bio.basics.name }}. All rights reserved.</div>
-          <div style="color: #999; font-size: 0.85em; margin-top: 5px;">
+        <div style="color: #bbb; font-size: 0.9em; line-height: 1.5;">
+          <div style="margin-bottom: 8px;">
+            © {{ 'now' | date: "%Y" }} {{ site.data.bio.basics.name }}. All rights reserved.
+          </div>
+          <div style="color: #999; font-size: 0.85em; line-height: 1.4;">
             Built with Jekyll & Semantic UI • Hosted on GitHub Pages
           </div>
         </div>
@@ -233,6 +235,14 @@
     /* Better mobile copyright section */
     .ui.stackable.two.column.grid > .column:first-child {
       text-align: center;
+      margin-bottom: 15px;
+    }
+    
+    .ui.stackable.two.column.grid > .column:first-child div {
+      line-height: 1.6;
+    }
+    
+    .ui.stackable.two.column.grid > .column:first-child div:first-child {
       margin-bottom: 10px;
     }
   }
@@ -254,5 +264,18 @@
     .ui.inverted.vertical.footer.segment {
       padding: 40px 0 20px 0;
     }
+  }
+  
+  /* Ensure proper text formatting in footer */
+  .ui.inverted.vertical.footer.segment .column div {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  /* Better spacing for copyright section */
+  .ui.stackable.two.column.grid > .column:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 </style>
