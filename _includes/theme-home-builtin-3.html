@@ -51,4 +51,53 @@
 <!-- Additional spacing for home page -->
 <div style="margin-bottom: 40px;"></div>
 
+<!-- Mobile optimization CSS for home page -->
+<style>
+  /* Ensure home page elements are visible on mobile */
+  @media only screen and (max-width: 767px) {
+    .ui.fluid.centered.card {
+      margin: 10px !important;
+      max-width: calc(100% - 20px) !important;
+    }
+    
+    .ui.fluid.centered.card .image {
+      height: 200px !important;
+    }
+    
+    .ui.fluid.centered.card .image img {
+      width: 100% !important;
+      height: 100% !important;
+      object-fit: cover !important;
+    }
+    
+    /* Ensure buttons are visible and touchable */
+    .ui.basic.button {
+      min-height: 44px !important;
+      padding: 10px 15px !important;
+      margin: 5px !important;
+      font-size: 0.9em !important;
+      display: inline-block !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+    }
+    
+    /* Ensure social icons are visible */
+    .big.icon {
+      font-size: 2em !important;
+      margin: 10px !important;
+      display: inline-block !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+      color: #2185d0 !important;
+    }
+    
+    /* Ensure all links are visible and clickable */
+    a {
+      display: inline-block !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+    }
+  }
+</style>
+
 </div>
