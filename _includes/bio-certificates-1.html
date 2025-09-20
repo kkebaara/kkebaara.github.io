@@ -1,29 +1,37 @@
 {% if site.data.bio.certificates %}
-<div class="sixteen wide column">
-  <h3 class="ui left aligned header no-bottom">
-    Certifications
-  </h3>
-  <hr style="margin: 0px;">
-  <div class="ui relaxed list">
+<div class="row">
+  <div class="two wide column">
+    <h3 class="ui left aligned header no-bottom">Certifications</h3>
+  </div>
+
+  <div class="fourteen wide column no-bottom">
     {% for cert in site.data.bio.certificates %}
-    <div class="item">
-      <div class="content">
-        <div class="header">
-          {{ cert.name }}
-          {% if cert.url %}
-            <a href="{{ cert.url }}" target="_blank" style="margin-left: 5px;">
-              <i class="external link icon"></i>
-            </a>
+    <div class="ui segment" style="margin-bottom: 15px; padding: 15px;">
+      <div class="ui grid">
+        <div class="twelve wide column no-bottom">
+          <h4 class="ui header no-bottom" style="color: #2185d0;">
+            <i class="certificate icon"></i>
+            <div class="content">
+              {{ cert.name }}
+              {% if cert.url %}
+                <a href="{{ cert.url }}" target="_blank" style="margin-left: 8px; color: #666;">
+                  <i class="external link icon"></i>
+                </a>
+              {% endif %}
+              <div class="sub header">{{ cert.issuer }} • {{ cert.date }}</div>
+            </div>
+          </h4>
+          {% if cert.summary %}
+          <p class="ui no-bottom" style="margin-top: 8px; color: #555; font-size: 0.9em;">
+            {{ cert.summary }}
+          </p>
           {% endif %}
         </div>
-        <div class="meta">
-          {{ cert.issuer }} • {{ cert.date }}
+        <div class="four wide right aligned column no-bottom">
+          <div class="ui mini label" style="background-color: #e8f4fd; color: #2185d0;">
+            {{ cert.date }}
+          </div>
         </div>
-        {% if cert.summary %}
-        <div class="description">
-          {{ cert.summary }}
-        </div>
-        {% endif %}
       </div>
     </div>
     {% endfor %}

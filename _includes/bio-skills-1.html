@@ -7,16 +7,32 @@
   </div>
 
   <div class="fourteen wide column no-bottom">
-    <p class="ui no-bottom">
     {% for entry in site.data.bio.skills %}
-      <p class="ui no-bottom">
-      <b>{{ entry.name }}:</b>
-      {% for keyword in entry.keywords %}
-        {{ keyword }}{% if forloop.last != true %}, {% endif %}
-      {% endfor %}
-      </p>
+      <div class="ui segment" style="margin-bottom: 10px; padding: 15px;">
+        <div class="ui grid">
+          <div class="four wide column">
+            <h4 class="ui header no-bottom" style="color: #2185d0;">
+              <i class="code icon"></i>
+              {{ entry.name }}
+            </h4>
+            <div class="ui mini label" style="background-color: #f0f0f0; color: #666;">
+              {{ entry.level }}
+            </div>
+          </div>
+          <div class="twelve wide column">
+            <div class="ui horizontal list">
+              {% for keyword in entry.keywords %}
+                <div class="item">
+                  <div class="ui mini label" style="background-color: #e8f4fd; color: #2185d0;">
+                    {{ keyword }}
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
     {% endfor %}
-
   </div>
 </div>
 {% endif %}

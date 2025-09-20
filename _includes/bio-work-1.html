@@ -3,45 +3,62 @@
 {% if site.data.bio.work %}
 <div class="row">
   <div class="two wide column">
-    <h3 class="ui left aligned header no-bottom">Work</h3>
+    <h3 class="ui left aligned header no-bottom">Experience</h3>
   </div>
 
   <div class="fourteen wide column no-bottom">
     {% for entry in site.data.bio.work %}
-
-    <div class="ui grid">
-      <div class="twelve wide column no-bottom">
-        <p class="ui no-bottom"><b>{{ entry.position }}, {{ entry.company }}</b></p>
-        <p class="ui no-bottom"><a href="{{ entry.website }}">{{ entry.website | remove: "http://" | remove: "https://"
-          }}</a></p>
-        <p class="ui no-bottom">{{ entry.summary }}</p>
-        {% if entry.highlights %}
-        <ul style="margin: 0px;">
-          {% for highlight in entry.highlights %}
-          <li>{{ highlight }}</li>
-          {% endfor %}
-        </ul>
-        {% endif %}
-      </div>
-      <div class="four wide right aligned column no-bottom">
-        <p class="ui no-bottom"><b>
-          {% if entry.startDate %}
-          {{ entry.startDate | slice: 0,4 }}
+    <div class="ui segment" style="margin-bottom: 20px; padding: 20px;">
+      <div class="ui grid">
+        <div class="twelve wide column no-bottom">
+          <h3 class="ui header no-bottom" style="color: #2185d0;">
+            <i class="briefcase icon"></i>
+            <div class="content">
+              {{ entry.position }}
+              <div class="sub header">{{ entry.company }}</div>
+            </div>
+          </h3>
+          {% if entry.website %}
+          <p class="ui no-bottom">
+            <a href="{{ entry.website }}" target="_blank" style="color: #666;">
+              <i class="external link icon"></i>
+              {{ entry.website | remove: "http://" | remove: "https://" }}
+            </a>
+          </p>
           {% endif %}
-          {% if entry.startDate and entry.endDate %}
-          -
+          <p class="ui no-bottom" style="margin-top: 10px; font-style: italic; color: #555;">
+            {{ entry.summary }}
+          </p>
+          {% if entry.highlights %}
+          <div style="margin-top: 15px;">
+            <h5 class="ui header no-bottom" style="color: #666;">Key Achievements:</h5>
+            <ul style="margin: 5px 0 0 0; padding-left: 20px;">
+              {% for highlight in entry.highlights %}
+              <li style="margin-bottom: 5px;">{{ highlight }}</li>
+              {% endfor %}
+            </ul>
+          </div>
           {% endif %}
-          {% if entry.endDate %}
-            {% if entry.endDate != "Present" %}
-              {{ entry.endDate | slice: 0,4 }}
-            {% else %}
-              {{ entry.endDate }}
+        </div>
+        <div class="four wide right aligned column no-bottom">
+          <div class="ui label" style="background-color: #e8f4fd; color: #2185d0;">
+            {% if entry.startDate %}
+            {{ entry.startDate | slice: 0,4 }}
             {% endif %}
-          {% endif %}
-        </b></p>
+            {% if entry.startDate and entry.endDate %}
+            -
+            {% endif %}
+            {% if entry.endDate %}
+              {% if entry.endDate != "Present" %}
+                {{ entry.endDate | slice: 0,4 }}
+              {% else %}
+                {{ entry.endDate }}
+              {% endif %}
+            {% endif %}
+          </div>
+        </div>
       </div>
     </div>
-
     {% endfor %}
   </div>
 </div>

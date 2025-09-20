@@ -1,6 +1,5 @@
 <!-- Used by theme-bio-builtin-1 -->
 
-
 <div class="row">
 <div class="two wide column">
   <h3 class="ui left aligned header no-bottom">Education</h3>
@@ -8,38 +7,46 @@
 
 <div class="fourteen wide column no-bottom">
   {% for entry in site.data.bio.education %}
-
-  <div class="ui grid">
-    <div class="twelve wide column no-bottom">
-      <p class="ui no-bottom"><b>{{ entry.institution }}</b></p>
-      <p class="ui no-bottom">{{ entry.studyType }}, {{ entry.area }}</p>
-      {% if entry.courses %}
-      <ul style="margin: 0px;">
-        {% for course in entry.courses %}
-        <li>{{ course }}</li>
-        {% endfor %}
-      </ul>
-      {% endif %}
-    </div>
-    <div class="four wide right aligned column no-bottom">
-      <p class="ui no-bottom"><b>
-        {% if entry.startDate %}
-        {{ entry.startDate | slice: 0,4 }}
+  <div class="ui segment" style="margin-bottom: 15px; padding: 15px;">
+    <div class="ui grid">
+      <div class="twelve wide column no-bottom">
+        <h4 class="ui header no-bottom" style="color: #2185d0;">
+          <i class="graduation cap icon"></i>
+          <div class="content">
+            {{ entry.institution }}
+            <div class="sub header">{{ entry.studyType }}, {{ entry.area }}</div>
+          </div>
+        </h4>
+        {% if entry.courses %}
+        <div style="margin-top: 10px;">
+          <h5 class="ui header no-bottom" style="color: #666;">Relevant Coursework:</h5>
+          <ul style="margin: 5px 0 0 0; padding-left: 20px;">
+            {% for course in entry.courses %}
+            <li style="margin-bottom: 3px;">{{ course }}</li>
+            {% endfor %}
+          </ul>
+        </div>
         {% endif %}
-        {% if entry.startDate and entry.startDate != '' and entry.endDate and entry.endDate != '' %}
-        -
-        {% endif %}
-        {% if entry.endDate %}
-          {% if entry.endDate != "Present" %}
-            {{ entry.endDate | slice: 0,4 }}
-          {% else %}
-            {{ entry.endDate }}
+      </div>
+      <div class="four wide right aligned column no-bottom">
+        <div class="ui label" style="background-color: #e8f4fd; color: #2185d0;">
+          {% if entry.startDate %}
+          {{ entry.startDate | slice: 0,4 }}
           {% endif %}
-        {% endif %}
-      </b></p>
+          {% if entry.startDate and entry.startDate != '' and entry.endDate and entry.endDate != '' %}
+          -
+          {% endif %}
+          {% if entry.endDate %}
+            {% if entry.endDate != "Present" %}
+              {{ entry.endDate | slice: 0,4 }}
+            {% else %}
+              {{ entry.endDate }}
+            {% endif %}
+          {% endif %}
+        </div>
+      </div>
     </div>
   </div>
-
   {% endfor %}
 </div>
 </div>
