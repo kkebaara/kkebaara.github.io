@@ -24,7 +24,7 @@
   <!-- Open Graph Meta Tags -->
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
   <meta property="og:description" content="{% if page.description %}{{ page.description }}{% elsif page.summary %}{{ page.summary }}{% else %}{{ site.data.bio.basics.summary }}{% endif %}">
-  <meta property="og:image" content="{{ site.data.bio.basics.picture }}">
+  <meta property="og:image" content="{{ site.url }}/{{ site.data.bio.basics.picture }}">
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
   <meta property="og:type" content="{% if page.layout == 'essay' %}article{% else %}website{% endif %}">
   <meta property="og:site_name" content="{{ site.title }}">
@@ -35,7 +35,7 @@
   <meta name="twitter:creator" content="@kkebaara">
   <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
   <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% elsif page.summary %}{{ page.summary }}{% else %}{{ site.data.bio.basics.summary }}{% endif %}">
-  <meta name="twitter:image" content="{{ site.data.bio.basics.picture }}">
+  <meta name="twitter:image" content="{{ site.url }}/{{ site.data.bio.basics.picture }}">
   
   <!-- Canonical URL -->
   <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' | replace:'/index.html','/' }}">
@@ -46,7 +46,7 @@
     "@type": "Person",
     "name": "{{ site.author }}",
     "url": "{{ site.url }}",
-    "image": "{{ site.data.bio.basics.picture }}",
+    "image": "{{ site.url }}/{{ site.data.bio.basics.picture }}",
     "sameAs": [
       "https://github.com/kkebaara",
       "https://linkedin.com/in/kkebaara"
@@ -65,7 +65,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   
   <!-- Image optimization hints -->
-  <link rel="preload" as="image" href="{{ site.data.bio.basics.picture }}">
+  <link rel="preload" as="image" href="{{ site.baseurl }}/{{ site.data.bio.basics.picture }}">
   
   <!-- DNS prefetch for performance -->
   <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
@@ -154,7 +154,7 @@
   "url": "{{ site.url }}",
   "email": "{{ site.data.bio.basics.email }}",
   "telephone": "{{ site.data.bio.basics.phone }}",
-  "image": "{{ site.data.bio.basics.picture }}",
+  "image": "{{ site.url }}/{{ site.data.bio.basics.picture }}",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "{{ site.data.bio.basics.location.city }}",
