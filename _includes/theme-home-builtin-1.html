@@ -68,97 +68,78 @@
 
 <!-- Mobile optimization CSS for home page -->
 <style>
-  /* Ensure home page elements are visible on mobile */
+  /* Mobile-specific optimizations */
   @media only screen and (max-width: 767px) {
     .ui.fluid.centered.card {
-      margin: 10px !important;
-      max-width: calc(100% - 20px) !important;
+      margin: 10px;
+      max-width: calc(100% - 20px);
     }
     
     .ui.fluid.centered.small.circular.image {
-      width: 120px !important;
-      height: 120px !important;
-      margin: 0 auto 20px auto !important;
+      width: 120px;
+      height: 120px;
+      margin: 0 auto 20px auto;
     }
     
     .ui.fluid.centered.small.circular.image img {
-      width: 100% !important;
-      height: 100% !important;
-      object-fit: cover !important;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
     
-    /* Ensure buttons are visible and touchable */
+    /* Ensure buttons are touchable on mobile */
     .ui.green.basic.button {
-      min-height: 44px !important;
-      padding: 10px 15px !important;
-      margin: 5px !important;
-      font-size: 0.9em !important;
-      display: inline-block !important;
-      visibility: visible !important;
-      opacity: 1 !important;
+      min-height: 44px;
+      padding: 10px 15px;
+      margin: 5px;
+      font-size: 0.9em;
     }
     
     /* Ensure social icons are visible */
     .big.icon {
-      font-size: 2em !important;
-      margin: 10px !important;
-      display: inline-block !important;
-      visibility: visible !important;
-      opacity: 1 !important;
-      color: #2185d0 !important;
+      font-size: 2em;
+      margin: 10px;
+      color: #2185d0;
     }
     
     /* Better spacing for mobile */
     .center.aligned.content {
-      padding: 10px !important;
+      padding: 10px;
     }
     
     .center.aligned.extra.content {
-      padding: 15px !important;
+      padding: 15px;
     }
     
     /* Ensure text is readable */
     .ui.fluid.centered.card .header {
-      font-size: 1.5em !important;
-      margin-bottom: 10px !important;
+      font-size: 1.5em;
+      margin-bottom: 10px;
     }
     
     .ui.fluid.centered.card .meta {
-      font-size: 1.1em !important;
-      margin-bottom: 15px !important;
+      font-size: 1.1em;
+      margin-bottom: 15px;
     }
     
     .ui.fluid.centered.card .description {
-      font-size: 1em !important;
-      line-height: 1.4 !important;
-      margin-bottom: 15px !important;
+      font-size: 1em;
+      line-height: 1.4;
+      margin-bottom: 15px;
     }
   }
   
   /* Tablet optimizations */
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .ui.green.basic.button {
-      min-height: 42px !important;
-      padding: 8px 12px !important;
-      margin: 3px !important;
+      min-height: 42px;
+      padding: 8px 12px;
+      margin: 3px;
     }
     
     .big.icon {
-      font-size: 2.2em !important;
-      margin: 8px !important;
+      font-size: 2.2em;
+      margin: 8px;
     }
-  }
-  
-  /* Ensure all links are visible and clickable */
-  a {
-    display: inline-block !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-  }
-  
-  /* Fix any potential z-index issues */
-  .ui.fluid.centered.card {
-    position: relative !important;
-    z-index: 1 !important;
   }
 </style>

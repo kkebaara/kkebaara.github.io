@@ -45,44 +45,31 @@
 
 <!-- Mobile optimization CSS for home page -->
 <style>
-  /* Ensure home page elements are visible on mobile */
+  /* Mobile-specific optimizations */
   @media only screen and (max-width: 767px) {
     .ui.rounded.image {
-      max-width: 250px !important;
-      margin: 0 auto 20px auto !important;
+      max-width: 250px;
+      margin: 0 auto 20px auto;
     }
     
     .ui.rounded.image img {
-      width: 100% !important;
-      height: auto !important;
+      width: 100%;
+      height: auto;
     }
     
-    /* Ensure buttons are visible and touchable */
+    /* Ensure buttons are touchable on mobile */
     .ui.basic.button {
-      min-height: 44px !important;
-      padding: 10px 15px !important;
-      margin: 5px !important;
-      font-size: 0.9em !important;
-      display: inline-block !important;
-      visibility: visible !important;
-      opacity: 1 !important;
+      min-height: 44px;
+      padding: 10px 15px;
+      margin: 5px;
+      font-size: 0.9em;
     }
     
     /* Ensure social icons are visible */
     .big.icon {
-      font-size: 2em !important;
-      margin: 10px !important;
-      display: inline-block !important;
-      visibility: visible !important;
-      opacity: 1 !important;
-      color: #2185d0 !important;
-    }
-    
-    /* Ensure all links are visible and clickable */
-    a {
-      display: inline-block !important;
-      visibility: visible !important;
-      opacity: 1 !important;
+      font-size: 2em;
+      margin: 10px;
+      color: #2185d0;
     }
   }
 </style>

@@ -193,40 +193,53 @@
   /* Mobile optimizations */
   @media only screen and (max-width: 767px) {
     .ui.inverted.vertical.footer.segment {
-      padding: 20px 0;
-      margin-top: 30px;
+      padding: 15px 0;
+      margin-top: 20px;
     }
     
     .ui.inverted.vertical.footer.segment h4 {
-      font-size: 1.05em;
-      margin-bottom: 15px;
+      font-size: 1em;
+      margin-bottom: 12px;
     }
     
     .ui.inverted.vertical.footer.segment .item {
-      font-size: 0.9em !important;
-      padding: 10px 0 !important;
-      min-height: 48px; /* Larger touch targets on mobile */
+      font-size: 0.85em !important;
+      padding: 6px 0 !important;
+      min-height: 40px;
+      line-height: 1.3;
     }
     
     .ui.inverted.vertical.footer.segment .ui.horizontal.link.list {
       justify-content: center !important;
+      flex-wrap: wrap;
     }
     
     .ui.inverted.vertical.footer.segment .ui.horizontal.link.list .item {
-      padding: 8px 12px !important;
-      margin: 2px;
+      padding: 6px 8px !important;
+      margin: 1px;
+      font-size: 0.8em;
     }
     
     #back-to-top {
       bottom: 15px;
       right: 15px;
-      min-width: 45px;
-      min-height: 45px;
+      min-width: 40px;
+      min-height: 40px;
     }
     
     /* Better spacing for mobile */
     .ui.stackable.grid > .column {
-      padding-bottom: 15px;
+      padding-bottom: 10px;
+    }
+    
+    /* Improve footer grid layout on mobile */
+    .ui.stackable.inverted.divided.equal.height.stackable.grid {
+      margin: 0;
+    }
+    
+    .ui.stackable.inverted.divided.equal.height.stackable.grid > .column {
+      padding-left: 10px;
+      padding-right: 10px;
     }
   }
   
