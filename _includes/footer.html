@@ -1,38 +1,38 @@
 <!-- Professional Footer -->
-<footer class="ui inverted vertical footer segment" style="background: linear-gradient(135deg, #1b1c1d 0%, #2c3e50 100%); margin-top: 60px; padding: 40px 0;">
+<footer class="ui inverted vertical footer segment" style="background: linear-gradient(135deg, #1b1c1d 0%, #2c3e50 100%); margin-top: 40px; padding: 30px 0;">
   <div class="ui container">
     <div class="ui stackable inverted divided equal height stackable grid">
       
       <!-- About Section -->
-      <div class="three wide column">
-        <h4 class="ui inverted header">
+      <div class="four wide tablet eight wide mobile column">
+        <h4 class="ui inverted header" style="margin-bottom: 20px;">
           <i class="user icon"></i>
           About
         </h4>
-        <div class="ui inverted link list">
-          <a href="{{ site.baseurl }}/bio/" class="item">Resume</a>
-          <a href="{{ site.baseurl }}/projects/" class="item">Projects</a>
-          <a href="{{ site.baseurl }}/essays/" class="item">Essays</a>
-          <a href="{{ site.baseurl }}/testimonials.html" class="item">Testimonials</a>
+        <div class="ui inverted link list" style="margin-bottom: 20px;">
+          <a href="{{ site.baseurl }}/bio/" class="item" style="padding: 8px 0; font-size: 0.95em;">Resume</a>
+          <a href="{{ site.baseurl }}/projects/" class="item" style="padding: 8px 0; font-size: 0.95em;">Projects</a>
+          <a href="{{ site.baseurl }}/essays/" class="item" style="padding: 8px 0; font-size: 0.95em;">Essays</a>
+          <a href="{{ site.baseurl }}/testimonials.html" class="item" style="padding: 8px 0; font-size: 0.95em;">Testimonials</a>
         </div>
       </div>
       
       <!-- Contact Section -->
-      <div class="three wide column">
-        <h4 class="ui inverted header">
+      <div class="four wide tablet eight wide mobile column">
+        <h4 class="ui inverted header" style="margin-bottom: 20px;">
           <i class="mail icon"></i>
           Contact
         </h4>
-        <div class="ui inverted link list">
-          <a href="mailto:{{ site.data.bio.basics.email }}" class="item">
+        <div class="ui inverted link list" style="margin-bottom: 20px;">
+          <a href="mailto:{{ site.data.bio.basics.email }}" class="item" style="padding: 8px 0; font-size: 0.95em;">
             <i class="mail icon"></i>
             {{ site.data.bio.basics.email }}
           </a>
-          <a href="tel:{{ site.data.bio.basics.phone }}" class="item">
+          <a href="tel:{{ site.data.bio.basics.phone }}" class="item" style="padding: 8px 0; font-size: 0.95em;">
             <i class="phone icon"></i>
             {{ site.data.bio.basics.phone }}
           </a>
-          <a href="{{ site.baseurl }}/contact.html" class="item">
+          <a href="{{ site.baseurl }}/contact.html" class="item" style="padding: 8px 0; font-size: 0.95em;">
             <i class="comment icon"></i>
             Get in Touch
           </a>
@@ -40,14 +40,14 @@
       </div>
       
       <!-- Social Links -->
-      <div class="three wide column">
-        <h4 class="ui inverted header">
+      <div class="four wide tablet eight wide mobile column">
+        <h4 class="ui inverted header" style="margin-bottom: 20px;">
           <i class="share icon"></i>
           Connect
         </h4>
-        <div class="ui inverted link list">
+        <div class="ui inverted link list" style="margin-bottom: 20px;">
           {% for profile in site.data.bio.basics.profiles %}
-          <a href="{{ profile.url }}" target="_blank" class="item">
+          <a href="{{ profile.url }}" target="_blank" class="item" style="padding: 8px 0; font-size: 0.95em;">
             <i class="{{ profile.network }} icon"></i>
             {{ profile.network | capitalize }}
           </a>
@@ -56,21 +56,21 @@
       </div>
       
       <!-- Portfolio Links -->
-      <div class="seven wide column">
-        <h4 class="ui inverted header">
+      <div class="four wide tablet sixteen wide mobile column">
+        <h4 class="ui inverted header" style="margin-bottom: 20px;">
           <i class="briefcase icon"></i>
           Portfolio
         </h4>
-        <div class="ui inverted link list">
-          <a href="https://kkebaara.github.io/DataAnalystPortfolio/index.html" target="_blank" class="item">
+        <div class="ui inverted link list" style="margin-bottom: 20px;">
+          <a href="https://kkebaara.github.io/DataAnalystPortfolio/index.html" target="_blank" class="item" style="padding: 8px 0; font-size: 0.95em;">
             <i class="chart bar icon"></i>
             Data Analyst Portfolio
           </a>
-          <a href="https://ouraringhistory.netlify.app/" target="_blank" class="item">
+          <a href="https://ouraringhistory.netlify.app/" target="_blank" class="item" style="padding: 8px 0; font-size: 0.95em;">
             <i class="heartbeat icon"></i>
             Oura Ring App
           </a>
-          <a href="{{ site.baseurl }}/projects/" class="item">
+          <a href="{{ site.baseurl }}/projects/" class="item" style="padding: 8px 0; font-size: 0.95em;">
             <i class="folder icon"></i>
             All Projects
           </a>
@@ -79,22 +79,22 @@
     </div>
     
     <!-- Copyright and Additional Info -->
-    <div class="ui inverted section divider" style="margin: 30px 0 20px 0;"></div>
+    <div class="ui inverted section divider" style="margin: 25px 0 15px 0;"></div>
     <div class="ui stackable inverted divided equal height stackable grid">
-      <div class="eight wide column">
-        <p style="color: #bbb; margin: 0;">
+      <div class="eight wide tablet sixteen wide mobile column">
+        <p style="color: #bbb; margin: 0; font-size: 0.9em; line-height: 1.4;">
           © {{ 'now' | date: "%Y" }} {{ site.data.bio.basics.name }}. All rights reserved.
         </p>
-        <p style="color: #999; margin: 5px 0 0 0; font-size: 0.9em;">
+        <p style="color: #999; margin: 5px 0 0 0; font-size: 0.85em; line-height: 1.4;">
           Built with Jekyll & Semantic UI • Hosted on GitHub Pages
         </p>
       </div>
-      <div class="eight wide column right aligned">
-        <div class="ui horizontal inverted small divided link list">
-          <a href="{{ site.baseurl }}/" class="item">Home</a>
-          <a href="{{ site.baseurl }}/bio/" class="item">Resume</a>
-          <a href="{{ site.baseurl }}/contact.html" class="item">Contact</a>
-          <a href="https://github.com/kkebaara" target="_blank" class="item">GitHub</a>
+      <div class="eight wide tablet sixteen wide mobile column" style="text-align: center;">
+        <div class="ui horizontal inverted small divided link list" style="justify-content: center; flex-wrap: wrap;">
+          <a href="{{ site.baseurl }}/" class="item" style="padding: 5px 10px; font-size: 0.9em;">Home</a>
+          <a href="{{ site.baseurl }}/bio/" class="item" style="padding: 5px 10px; font-size: 0.9em;">Resume</a>
+          <a href="{{ site.baseurl }}/contact.html" class="item" style="padding: 5px 10px; font-size: 0.9em;">Contact</a>
+          <a href="https://github.com/kkebaara" target="_blank" class="item" style="padding: 5px 10px; font-size: 0.9em;">GitHub</a>
         </div>
       </div>
     </div>
@@ -153,11 +153,15 @@
   .ui.inverted.vertical.footer.segment h4 {
     color: #2185d0 !important;
     margin-bottom: 15px;
+    font-size: 1.1em;
   }
   
   .ui.inverted.vertical.footer.segment .item {
     color: #bbb !important;
     transition: color 0.3s ease;
+    min-height: 44px; /* Touch target size */
+    display: flex;
+    align-items: center;
   }
   
   .ui.inverted.vertical.footer.segment .item:hover {
@@ -166,6 +170,8 @@
   
   #back-to-top {
     transition: all 0.3s ease;
+    min-width: 50px;
+    min-height: 50px;
   }
   
   #back-to-top:hover {
@@ -182,5 +188,68 @@
   
   .ui.container {
     flex: 1;
+  }
+  
+  /* Mobile optimizations */
+  @media only screen and (max-width: 767px) {
+    .ui.inverted.vertical.footer.segment {
+      padding: 20px 0;
+      margin-top: 30px;
+    }
+    
+    .ui.inverted.vertical.footer.segment h4 {
+      font-size: 1.05em;
+      margin-bottom: 15px;
+    }
+    
+    .ui.inverted.vertical.footer.segment .item {
+      font-size: 0.9em !important;
+      padding: 10px 0 !important;
+      min-height: 48px; /* Larger touch targets on mobile */
+    }
+    
+    .ui.inverted.vertical.footer.segment .ui.horizontal.link.list {
+      justify-content: center !important;
+    }
+    
+    .ui.inverted.vertical.footer.segment .ui.horizontal.link.list .item {
+      padding: 8px 12px !important;
+      margin: 2px;
+    }
+    
+    #back-to-top {
+      bottom: 15px;
+      right: 15px;
+      min-width: 45px;
+      min-height: 45px;
+    }
+    
+    /* Better spacing for mobile */
+    .ui.stackable.grid > .column {
+      padding-bottom: 15px;
+    }
+  }
+  
+  /* Tablet optimizations */
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .ui.inverted.vertical.footer.segment {
+      padding: 25px 0;
+      margin-top: 35px;
+    }
+    
+    .ui.inverted.vertical.footer.segment .item {
+      padding: 9px 0 !important;
+      min-height: 46px;
+    }
+  }
+  
+  /* Ensure proper line height for better readability */
+  .ui.inverted.vertical.footer.segment p {
+    line-height: 1.5;
+  }
+  
+  /* Better spacing between sections */
+  .ui.inverted.vertical.footer.segment .ui.stackable.grid > .column:not(:last-child) {
+    margin-bottom: 10px;
   }
 </style>
