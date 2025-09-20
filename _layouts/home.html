@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+    {{ content }}
+    {% include footer.html %}
+
+    <!-- Initialize Semantic UI components -->
+    <script>
+      $(document).ready(function() {
+        // Initialize any Semantic UI components if needed
+        $('.ui.dropdown').dropdown();
+        $('.ui.button').button();
+      });
+    </script>
+
+  </body>
+
+</html>
