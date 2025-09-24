@@ -6,16 +6,16 @@
 {% assign num_essays = essay_pages.size | plus: num_medium_articles %}
 {% assign num_projects = project_pages.size %}
 
-<div style="height: 100%; margin-top: -75px" class="ui middle aligned grid ">
+<div style="min-height: calc(100vh - 200px); margin-top: 20px; padding-bottom: 120px;" class="ui middle aligned grid ">
 
   <div class="column">
 
-    <div style="position: relative; top: 75px; z-index: 1" class="ui fluid centered small circular image">
+    <div style="position: relative; top: 0px; z-index: 1; margin-bottom: 20px;" class="ui fluid centered small circular image">
       <img src="{{ site.baseurl }}/{{ site.data.bio.basics.picture }}">
     </div>
 
 
-    <div style="max-width: 500px; padding-top: 75px; margin-top: 0px" class="ui fluid centered card">
+    <div style="max-width: 500px; padding-top: 0px; margin-top: 0px" class="ui fluid centered card">
 
       <div class="center aligned content">
         <span class="header">{{ site.data.bio.basics.name }}</span>
@@ -64,12 +64,61 @@
 </div>
 
 <!-- Additional spacing for home page -->
-<div style="margin-bottom: 40px;"></div>
+<div style="margin-bottom: 120px; clear: both;"></div>
 
 <!-- Mobile optimization CSS for home page -->
 <style>
+  /* Ensure proper spacing for all screen sizes */
+  body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Main content area spacing */
+  .ui.middle.aligned.grid {
+    position: relative;
+    z-index: 1;
+    flex: 1;
+    margin-bottom: 120px;
+  }
+  
+  /* Ensure footer separation */
+  footer {
+    margin-top: auto !important;
+    position: relative;
+    z-index: 2;
+    clear: both;
+  }
+  
+  /* Prevent any overlap */
+  .ui.middle.aligned.grid::after {
+    content: "";
+    display: block;
+    height: 120px;
+    clear: both;
+  }
   /* Mobile-specific optimizations */
   @media only screen and (max-width: 767px) {
+    .ui.middle.aligned.grid {
+      min-height: calc(100vh - 200px) !important;
+      padding-bottom: 140px !important;
+      margin-bottom: 80px !important;
+      margin-top: 10px !important;
+    }
+    
+    /* Extra mobile separation */
+    .ui.middle.aligned.grid::after {
+      height: 120px !important;
+    }
+    
+    /* Mobile footer separation */
+    footer {
+      margin-top: 100px !important;
+    }
+    
     .ui.fluid.centered.card {
       margin: 10px;
       max-width: calc(100% - 20px);
@@ -131,6 +180,23 @@
   
   /* Tablet optimizations */
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .ui.middle.aligned.grid {
+      min-height: calc(100vh - 220px) !important;
+      padding-bottom: 120px !important;
+      margin-top: 15px !important;
+      margin-bottom: 100px !important;
+    }
+    
+    /* Tablet footer separation */
+    footer {
+      margin-top: 80px !important;
+    }
+    
+    /* Tablet separation */
+    .ui.middle.aligned.grid::after {
+      height: 100px !important;
+    }
+    
     .ui.green.basic.button {
       min-height: 42px;
       padding: 8px 12px;
