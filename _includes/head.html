@@ -39,7 +39,8 @@
   
   <!-- Canonical URL -->
   <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' | replace:'/index.html','/' }}">
-  <!-- JSON-LD Structured Data for Portfolio -->
+  <!-- JSON-LD Structured Data for Portfolio (exclude on testimonials page to avoid conflicts) -->
+  {% unless page.title contains "Testimonials" %}
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -55,6 +56,7 @@
     "description": "{{ site.description }}"
   }
   </script>
+  {% endunless %}
   
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/favicon.ico">
@@ -143,7 +145,8 @@
 
 
 
-<!-- Structured Data JSON-LD -->
+<!-- Structured Data JSON-LD (exclude on testimonials page to avoid conflicts) -->
+{% unless page.title contains "Testimonials" %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -182,6 +185,7 @@
   }
 }
 </script>
+{% endunless %}
 
 {% if page.type == "project" %}
 <script type="application/ld+json">
