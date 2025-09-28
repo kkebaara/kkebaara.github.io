@@ -11,21 +11,59 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+// Main content wrapper to push footer down
+.main-content {
+  flex: 1;
+  padding-bottom: 60px; // Extra space before footer
 }
 
 // Ensure proper spacing between main content and footer
 .ui.middle.aligned.grid {
   position: relative;
   z-index: 1;
-  margin-bottom: 120px;
+  margin-bottom: 80px; // Increased spacing
 }
 
-// Footer separation
+// Container spacing for all pages
+.ui.container {
+  margin-bottom: 40px;
+}
+
+// Project and essay page spacing
+.ui.text.container {
+  margin-bottom: 60px;
+}
+
+// Footer separation and positioning
 footer {
   margin-top: auto !important;
   position: relative;
   z-index: 2;
   clear: both;
+}
+
+// Testimonials page specific spacing
+.testimonials-page {
+  margin-bottom: 60px;
+}
+
+// Add spacing for home page content
+[style*="min-height: calc(100vh - 200px)"] {
+  margin-bottom: 40px;
+}
+
+// Ensure cards and content have proper bottom spacing
+.ui.card, .ui.cards {
+  margin-bottom: 30px;
+}
+
+// Bio page spacing
+.bio-content {
+  margin-bottom: 50px;
 }
 
 // Prevent content overlap
