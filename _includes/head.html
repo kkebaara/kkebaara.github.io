@@ -1,13 +1,5 @@
 <head>
-  <!-- Go  <!-- SEO Meta Tags -->
-  <meta name="description" content="{% if page.description %}{{ page.description }}{% elsif page.summary %}{{ page.summary }}{% else %}{{ site.description }}{% endif %}">
-  <meta name="keywords" content="{% if page.labels %}{{ page.labels | join: ', ' }}{% else %}{{ site.keywords }}{% endif %}">
-  <meta name="author" content="{{ site.author }}">
-  
-  <!-- Google Search Console Verification (add your verification code to _config.yml) -->
-  {% if site.google_search_console %}
-  <meta name="google-site-verification" content="{{ site.google_search_console }}" />
-  {% endif %} tag (gtag.js) -->
+  <!-- Google tag (gtag.js) -->
   {% include analytics.html %}
   
   <meta charset="utf-8">
@@ -21,6 +13,16 @@
     {% endif %}
     {{ site.title }}
   </title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% elsif page.summary %}{{ page.summary }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="keywords" content="{% if page.labels %}{{ page.labels | join: ', ' }}{% else %}{{ site.keywords }}{% endif %}">
+  <meta name="author" content="{{ site.author }}">
+  
+  <!-- Google Search Console Verification (add your verification code to _config.yml) -->
+  {% if site.google_search_console %}
+  <meta name="google-site-verification" content="{{ site.google_search_console }}" />
+  {% endif %}
 
   <!-- SEO Meta Tags -->
   <meta name="description" content="{% if page.description %}{{ page.description }}{% elsif page.summary %}{{ page.summary }}{% else %}{{ site.description }}{% endif %}">
