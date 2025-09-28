@@ -1,5 +1,13 @@
 <head>
-  <!-- Google tag (gtag.js) -->
+  <!-- Go  <!-- SEO Meta Tags -->
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% elsif page.summary %}{{ page.summary }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="keywords" content="{% if page.labels %}{{ page.labels | join: ', ' }}{% else %}{{ site.keywords }}{% endif %}">
+  <meta name="author" content="{{ site.author }}">
+  
+  <!-- Google Search Console Verification (add your verification code to _config.yml) -->
+  {% if site.google_search_console %}
+  <meta name="google-site-verification" content="{{ site.google_search_console }}" />
+  {% endif %} tag (gtag.js) -->
   {% include analytics.html %}
   
   <meta charset="utf-8">
@@ -160,6 +168,7 @@
   "image": "{{ site.url }}/{{ site.data.bio.basics.picture }}",
   "address": {
     "@type": "PostalAddress",
+    "streetAddress": "{{ site.data.bio.basics.location.address }}",
     "addressLocality": "{{ site.data.bio.basics.location.city }}",
     "addressRegion": "{{ site.data.bio.basics.location.region }}",
     "postalCode": "{{ site.data.bio.basics.location.postalCode }}",
