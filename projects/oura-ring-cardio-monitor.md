@@ -2,7 +2,7 @@
 layout: project
 type: project
 published: true
-image: images/oura-ring-app.png
+image: images/oura-ring-cardio-monitor.png
 title: Oura Ring Cardio Monitor Application
 permalink: projects/oura-ring-cardio-monitor
 # All dates must be YYYY-MM-DD format!
@@ -17,11 +17,7 @@ labels:
 summary: Built a comprehensive Web and Mobile application that connects to the Oura Ring API to monitor heart rate and identify cardiovascular workout zones with real-time data visualization and push notifications.
 ---
 
-<div class="ui small rounded images">
-  <img class="ui image" src="../images/oura-ring-app.png">
-  <img class="ui image" src="../images/oura-ring-dashboard.png">
-  <img class="ui image" src="../images/oura-ring-mobile.png">
-</div>
+<img class="ui medium rounded image" src="../images/oura-ring-cardio-monitor.png" alt="Oura Ring Cardio Monitor Application — device, mobile app, and dashboard">
 
 ## Project Overview
 

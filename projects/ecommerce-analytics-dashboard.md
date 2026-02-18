@@ -2,7 +2,7 @@
 layout: project
 type: project
 published: true
-image: images/analytics-dashboard.png
+image: images/ecommerce-analytics-dashboard.png
 title: ECommerce Analytics Dashboard
 permalink: projects/ecommerce-analytics-dashboard
 # All dates must be YYYY-MM-DD format!
@@ -18,11 +18,7 @@ labels:
 summary: Built an end-to-end loan data analytics solution on Google Cloud Platform for a fintech firm, featuring advanced SQL optimization, interactive Looker dashboards, and automated reporting workflows that improved risk oversight and operational efficiency.
 ---
 
-<div class="ui small rounded images">
-  <img class="ui image" src="../images/analytics-dashboard.png">
-  <img class="ui image" src="../images/looker-dashboard.png">
-  <img class="ui image" src="../images/bigquery-tables.png">
-</div>
+<img class="ui medium rounded image" src="../images/ecommerce-analytics-dashboard.png" alt="ECommerce Analytics Dashboard — Looker dashboards, loan data, and automated risk reporting">
 
 ## Project Overview
 

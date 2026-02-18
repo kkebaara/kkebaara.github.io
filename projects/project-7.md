@@ -14,7 +14,7 @@ labels:
 
 summary: Professional fitness platform connecting personal trainers with clients through online coaching, workout programs, and progress tracking.
 
-projecturl: https://www.fitbyjonetics.com/
+projecturl: https://fitbyjonetics.app/
 ---
 
 ## Fit By Jonetics: Digital Fitness Transformation
